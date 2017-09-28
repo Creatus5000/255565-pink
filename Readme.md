@@ -1,4 +1,4 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Скляренко](https://up.htmlacademy.ru/adaptive/12/user/255565).
 * Наставник: `Сергей Попенко`.
@@ -56,3 +56,4 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/255565-pink
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/255565-pink/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/255565-pink?type=dev
+
