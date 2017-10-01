@@ -1,1 +1,40 @@
-body { background: red; }
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url(../fonts/opensanslight.woff2) format('woff2'), url(../fonts/opensanslight.woff) format('woff');
+}
+
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url(../fonts/opensans.woff2) format('woff2'), url(../fonts/opensans.woff) format('woff');
+}
+
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+
+    src: url(../fonts/opensansbold.woff2) format('woff2'), url(../fonts/opensansbold.woff) format('woff');
+}
+
+
+
+@import 'normalize.less';
+@import 'variables.less';
+@import 'body.less';
+@import 'visually-hidden.less';
+@import 'page-header.less';
+@import 'main-nav.less';
+@import 'program-download.less';
+@import 'advertising';
+@import 'price-list';
+@import 'page-footer';
+
