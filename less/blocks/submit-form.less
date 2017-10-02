@@ -1,0 +1,63 @@
+.submit-form{
+  text-align:center;
+
+  &__header{
+    background-color:@white;
+    .font14;
+    .line(30px);
+  }
+
+  &__label--text,
+  &__title,
+  &__feedback{
+    .font14;
+    .line(30px);
+    color:@crimson;
+    text-transform:uppercase;
+
+      input[placeholder],
+      textarea[placeholder]{
+      font-family: 'Open Sans', 'Arial', sans-serif;
+      .font18;
+      .line(30px);
+
+    }
+
+    input::placeholder,
+    textarea::-webkit-input-placeholder{
+      color:@darkblue;
+    }
+  }
+
+    &__achievments,
+    &__platform {
+      background-color:@bg-grey;
+    }
+
+      &__title{
+      .font14;
+      .line(18px);
+      color:@crimson;
+      text-transform:uppercase;
+    }
+
+    &__label--select{
+      .font18;
+      .line(30px);
+      color:@darkblue;
+    }
+
+    &__asterix {
+      color:@darkblue;
+      .font14;
+      .line(30px);
+      text-transform:uppercase;
+
+      sup{
+        color:@crimson;
+      }
+    }
+
+  }
+
+
