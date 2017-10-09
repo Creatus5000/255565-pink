@@ -1,0 +1,151 @@
+.contacts-page {
+    &__index {
+        background-color: @white;
+        margin: 0 auto;
+    }
+    &__top {
+        margin-bottom: 30px;
+        padding-bottom: 11px;
+        padding-top: 7px;
+    }
+    &__title {
+        .font24;
+        .line (18px);
+        color: @darkblue;
+        font-weight: @light;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    &__contacts-title {
+        .font18;
+        .line(18px);
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    &__contacts-details, &__contacts-details a {
+        .font24;
+        .line(24px);
+        color: @crimson;
+        font-weight: @light;
+        margin-bottom: 25px;
+        margin-top: 0px;
+        text-align: center;
+        text-decoration: none;
+    }
+    &__other-pages {
+        background-color: @white;
+        text-align: center;
+    }
+    &__academy, &__academy a, &__logo-link {
+        .font14;
+        .line (18px);
+        color: @darkblue;
+        text-decoration: none;
+    }
+    &__map {
+        background-image: url("../img/bg-map-mobile@1x-2.png");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        height: 200px;
+        margin: 0 auto;
+        width: 320px;
+    }
+}
+.social-buttons {
+    &__icon {
+        list-style: none;
+    }
+    a {
+        color: @darkblue;
+        text-decoration: none;
+    }
+}
+@media(min-width:@tablet) {
+    .contacts-page {
+        &__index {
+            margin: 0 auto;
+        }
+        &__top {
+            margin-bottom: 18px;
+            padding-bottom: 20px;
+            padding-top: 35px;
+        }
+        &__title {
+            .font40;
+            .line (40px);
+            color: @darkblue;
+            font-weight: @light;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            text-align: center;
+        }
+        &__contacts-details {
+            margin-bottom: 45px;
+        }
+        &__middle {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__contacts {
+            width: 280px;
+        }
+        &__map {
+            background-image: url("../img/bg-map-tablet@1x.png");
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            height: 377px;
+            width: @tablet;
+        }
+        &__wrap {
+            margin: 0 auto;
+            width: @tablet;
+        }
+    }
+}
+@media(min-width:@desktop) {
+    .contacts-page {
+        &__index {
+            padding-top: 45px;
+        }
+        &__top {
+            margin-bottom: 30px;
+        }
+        &__title {
+            .font50;
+            .line(50px);
+        }
+        &__middle {
+            display: flex;
+            flex-direction: row;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+        &__middle > div:nth-of-type(1) {
+            order: 1;
+        }
+        &__middle > div:nth-of-type(2) {
+            order: 3;
+        }
+        &__middle > div:nth-of-type(3) {
+            order: 2;
+        }
+        &__contacts-title {
+            margin-bottom: 30px;
+        }
+        &__map {
+            background-image: url("../img/bg-map-desktop@1x.png");
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            height: 500px;
+            width: @desktop;
+        }
+        &__wrap {
+            width: @desktop;
+        }
+    }
+}

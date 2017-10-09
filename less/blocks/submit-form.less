@@ -1,63 +1,45 @@
-.submit-form{
-  text-align:center;
-
-  &__header{
-    background-color:@white;
-    .font14;
-    .line(30px);
-  }
-
-  &__label--text,
-  &__title,
-  &__feedback{
-    .font14;
-    .line(30px);
-    color:@crimson;
-    text-transform:uppercase;
-
-      input[placeholder],
-      textarea[placeholder]{
-      font-family: 'Open Sans', 'Arial', sans-serif;
-      .font18;
-      .line(30px);
-
+.submit-form {
+    text-align: center;
+    &__header {
+        .font14;
+        .line(30px);
+        background-color: @white;
     }
-
-    input::placeholder,
-    textarea::-webkit-input-placeholder{
-      color:@darkblue;
+    &__label--text, &__title, &__feedback {
+        .font14;
+        .line(30px);
+        color: @crimson;
+        text-transform: uppercase;
+        input[placeholder], textarea[placeholder] {
+            .font18;
+            .line(30px);
+            font-family: 'Open Sans','Arial',sans-serif;
+        }
+        input::placeholder, textarea::-webkit-input-placeholder {
+            color: @darkblue;
+        }
     }
-  }
-
-    &__achievments,
-    &__platform {
-      background-color:@bg-grey;
+    &__achievments, &__platform {
+        background-color: @bg-grey;
     }
-
-      &__title{
-      .font14;
-      .line(18px);
-      color:@crimson;
-      text-transform:uppercase;
+    &__title {
+        .font14;
+        .line(18px);
+        color: @crimson;
+        text-transform: uppercase;
     }
-
-    &__label--select{
-      .font18;
-      .line(30px);
-      color:@darkblue;
+    &__label--select {
+        .font18;
+        .line(30px);
+        color: @darkblue;
     }
-
     &__asterix {
-      color:@darkblue;
-      .font14;
-      .line(30px);
-      text-transform:uppercase;
-
-      sup{
-        color:@crimson;
-      }
+        .font14;
+        .line(30px);
+        color: @darkblue;
+        text-transform: uppercase;
+        sup {
+            color: @crimson;
+        }
     }
-
-  }
-
-
+}

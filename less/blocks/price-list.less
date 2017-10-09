@@ -1,31 +1,166 @@
 .price-list {
-  background-color:@bg-grey;
-
-  &__table {
-    margin:0 auto;
-  }
-
-  &__header,
-  &__price{
-    background-color:@darkblue;
-    color:@white;
-    .font18;
-    .line (30px)
-
-  }
-
-  &__price{
-    font-weight:@light;
-    .line (24px);
-    font-size:30px;
-  }
-
-  &__features{
-    .font14;
-    .line (30px);
-    color:@darkblue;
-    text-transform: uppercase;
-    text-align: left;
-    background-color:@white;
-  }
+    background-color: @bg-grey;
+    padding-bottom: 140px;
+    &__table {
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    &__header, &__price {
+        .font18;
+        .line (30px);
+        background-color: @darkblue;
+        border: 3px solid @darkblue;
+        color: @white;
+        text-transform: uppercase;
+    }
+    &__header--greyborder, &__price--greyborder {
+        border-left: 3px solid @table-grey;
+        border-right: 3px solid @table-grey;
+    }
+    &__header--empty, &__price--empty {
+        background-color: transparent;
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
+        display: table-cell;
+    }
+    &__price {
+        .font24;
+        .line (24px);
+        font-weight: @light;
+    }
+    &__features {
+        .font14;
+        .line (30px);
+        background-color: @white;
+        border: 3px solid @table-grey;
+        color: @darkblue;
+        min-width: 280px;
+        padding-bottom: 29px;
+        padding-top: 30px;
+        position: relative;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &__features::before {
+        .font14;
+        .line(30px);
+        color: black;
+        content: attr(data-header);
+        font-weight: normal;
+        height: 30px;
+        left: 15px;
+        position: absolute;
+        text-align: left;
+        text-transform: uppercase;
+        top: 15px;
+        width: 200px;
+    }
+    &__features--yes::after {
+        .font14;
+        .line(30px);
+        background-image: url("../img/icon-yes.svg");
+        background-repeat: no-repeat;
+        color: rgba(255,255,255,0);
+        content: "да";
+        font-weight: normal;
+        height: 33px;
+        left: 225px;
+        position: absolute;
+        text-align: right;
+        text-transform: uppercase;
+        top: 12px;
+        width: 33px;
+    }
+    &__features--no::after {
+        .font14;
+        .line(30px);
+        background-image: url("../img/icon-no.svg");
+        background-repeat: no-repeat;
+        color: rgba(255,255,255,0);
+        content: "нет";
+        font-weight: normal;
+        height: 33px;
+        left: 225px;
+        position: absolute;
+        text-align: right;
+        text-transform: uppercase;
+        top: 12px;
+        width: 33px;
+        z-index: 20;
+    }
+}
+@media(max-width:@tablet-1) {
+    .price-list {
+        padding-top: 70px;
+        &__header--empty, &__price--empty, &__features--column1 {
+            display: none;
+        }
+        &__header {
+            .font18;
+            padding-top: 12px;
+        }
+        &__price {
+            .font24;
+            padding-bottom: 20px;
+        }
+    }
+}
+@media(min-width:@tablet) {
+    .price-list {
+        padding-bottom: 75px;
+        padding-top: 40px;
+        &__header {
+            .font16;
+            padding-top: 7px;
+        }
+        &__price {
+            .font18;
+            padding-bottom: 5px;
+        }
+        &__features {
+            min-width: 155px;
+            padding-bottom: 22px;
+            padding-top: 22px;
+        }
+        &__features::before {
+            display: none;
+            left: 15px;
+            top: 8px;
+        }
+        &__features--column1::before {
+            display: block;
+            text-transform: capitalize;
+        }
+        &__features::after {
+            left: 65px;
+        }
+    }
+}
+@media(min-width:@desktop) {
+    .price-list {
+        padding-top: 68px;
+        &__features {
+            min-width: 235px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        &__features::after {
+            left: 100px;
+            top: 18px;
+        }
+        &__features--column1::before {
+            .font18;
+            left: 23px;
+            padding-top: 5px;
+        }
+        &__header {
+            .font18;
+            padding-top: 15px;
+        }
+        &__price {
+            .font24;
+            padding-bottom: 20px;
+        }
+    }
 }

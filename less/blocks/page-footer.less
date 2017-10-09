@@ -1,68 +1,89 @@
-.page-footer{
-
-  &__title{
-    .font24;
-    .line (18px);
-    color:@darkblue;
-    font-weight:@light;
-    text-align:center;
-  }
-
-  &__contacts-title {
-    .font18;
-    .line(18px);
-    font-weight:bold;
-    text-align:center;
-  }
-
-
-  &__contacts-details,
-  &__contacts-details a {
-    text-decoration:none;
-    color:@crimson;
-    font-weight:@light;
-    .font24;
-    text-align:center;
-  }
-
-  &__other-pages{
-    background-color:@white;
-    text-align:center;
-
-  }
-
-  &__academy,
-  &__academy a,
-  &__logo-link
-  {
-    .font14;
-    .line (18px);
-    color:@darkblue;
-    text-decoration:none;
- }
-
- &__map{
-    background-image:url("../img/bg-map-mobile@1x-2.png");
-    background-repeat:no-repeat;
-    height:200px;
-    background-position:bottom center;
-
- }
-
-
+@media(max-width:@tablet-1) {
+    .page-footer {
+        display: none;
+    }
 }
-
-
-  .social-buttons {
-    &__icon{
-    list-style:none;
-  }
-
-  a{
-    text-decoration:none;
-    color:@darkblue;
-  }
-
-
-
-  }
+@media(min-width:@tablet) {
+    .page-footer {
+        margin: 0 auto;
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 12px 20px 40px 20px;
+            width: @tablet;
+        }
+        &__academy {
+            .font14;
+            .line(5px);
+            margin-top: 27px;
+            padding-right: 35px;
+            padding-top: 10px;
+            position: relative;
+            vertical-align: middle;
+        }
+        &__academy--link {
+            font-size: 0;
+        }
+        &__academy--link::after {
+            background-image: url("../img/htmlacademy.svg");
+            background-repeat: no-repeat;
+            content: "";
+            font-weight: normal;
+            height: 43px;
+            left: 90px;
+            position: absolute;
+            text-align: right;
+            text-transform: uppercase;
+            top: -10px;
+            width: 40px;
+        }
+    }
+    .social-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        padding-left: 80px;
+        &__icon-link {
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            border: 3px solid @table-grey;
+            border-radius: 50%;
+            font-size: 0;
+            height: 54px;
+            margin-left: 10px;
+            padding: 23px;
+            width: 54px;
+        }
+        .twitter {
+            background-image: url("../img/icon-twitter.svg");
+        }
+        .facebook {
+            background-image: url("../img/icon-facebook.svg");
+        }
+        .youtube {
+            background-image: url("../img/icon-youtube.svg");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+    }
+    @media(min-width:@desktop) {
+        .page-footer {
+            &__container {
+                padding: 45px 130px 40px 130px;
+                width: @desktop;
+            }
+            &__academy {
+                .font18;
+            }
+            &__academy--link::after {
+                left: 115px;
+            }
+        }
+        .social-buttons {
+            padding-left: 104px;
+        }
+    }
+}
