@@ -19,10 +19,9 @@
         }
         @media(min-width:@desktop) {
             background-color: @header-opacity;
-            margin: 0 auto;
-            padding-left: 130px;
-            padding-right: 130px;
-            width: 1200px;
+            width:100%;
+
+
         }
     }
     &__logo-link {
@@ -36,6 +35,14 @@
             display: none;
         }
     }
+    &__wrap{
+      @media(min-width:@desktop){
+      width:1200px;
+      margin:0 auto;
+      padding-left: 130px;
+      padding-right: 130px;
+      }
+    }
 }
 .customer-pictures__title {
     .font24;
@@ -45,6 +52,8 @@
     margin: 0 auto;
     text-align: center;
 }
+
+/*temporary*/
 .page-header {
     &__logo-container {
         min-height: 70px;
@@ -53,3 +62,4 @@
         }
     }
 }
+

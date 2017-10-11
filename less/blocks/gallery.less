@@ -1,22 +1,56 @@
 .gallery {
-    background-color: @white;
+
     text-align: center;
     &__title {
         .font14;
         .line (30px);
         text-align: center;
+        padding:45px 38px 45px 38px;
+
     }
+
+    &__picture--panoram{
+      position:relative;
+
+    }
+
+
+    &__panoramic-image{
+      width:100%;
+      height:auto;
+    }
+
+
     &__picture {
         background-color: @bg-grey;
+        margin-top:0;
+
     }
+
+    &__picture-info{
+      background-color: @bg-grey;
+      text-align:left;
+      margin-right:20px;
+      margin-left:20px;
+      padding:15px 15px 15px 20px;
+
+    }
+
     &__picture-title {
-        .font14;
+        .font12;
         .line (24px);
+        font-weight:bold;
         background-color: @crimson;
         color: @white;
         text-transform: uppercase;
+        position:absolute;
+        padding:5px 20px 5px 20px;
+        top:-12px;
+        right:20px;
+
     }
     &__picture-author {
+      margin:0;
         span {
             .font14;
             .line (24px);
@@ -30,10 +64,73 @@
             font-weight: @light;
         }
     }
+    &__picture-comments{
+      .font14;
+      .line(24px);
+      margin-top:0px;
+      margin-bottom:0px;
+      padding-left:20px;
+    }
+
     &__picture-likes {
         .font12;
         .line(24px);
         color: @crimson;
         text-transform: uppercase;
+        margin-top:10px;
+        margin-bottom:10px;
     }
 }
+
+@media(min-width:@tablet){
+
+  .gallery{
+
+  &__title {
+        .font18;
+        padding:90px 80px 75px 80px;
+}
+  &__container{
+    width:@tablet;
+    margin:0 auto;
+  }
+
+  &__panoramic-image{
+      width:660px;
+      height:511px;
+
+    }
+
+      &__picture-title {
+        top:50px;
+      }
+
+}
+}
+
+@media(min-width:@desktop){
+
+  .gallery{
+  &__title {
+        .font18;
+        padding:95px 310px 85px 310px;
+}
+
+  &__container{
+    width:@desktop;
+    margin:0 auto;
+  }
+
+  &__panoramic-image{
+      width:1200px;
+      height:505px;
+
+    }
+      &__picture-title {
+        top:45px;
+        right:130px;
+      }
+
+}
+}
+
