@@ -1,40 +1,115 @@
-.program-download{
-  background-color:#1d2631;
-  text-align:center;
-
-  &__button{
-    .font18;
-    .line (18px);
-    font-weight:bold;
-    text-decoration:none;
-    color:@white;
-
-  }
-
-
-a {
-  color:@white;
-  text-decoration:none;
-  font-weight:@light;
+.program-download {
+    background-color: @darkblue;
+    padding: 425px 20px 28px 20px;
+    position: relative;
+    text-align: center;
+    &__button {
+        .font18;
+        .line (18px);
+        color: @white;
+        display: block;
+        font-weight: bold;
+        position: relative;
+        text-decoration: none;
+        @media(min-width:@desktop) {
+            .font21;
+        }
+    }
+    a {
+        color: @white;
+        display: block;
+        font-weight: bold;
+        padding: 18px 10px;
+        text-decoration: none;
+    }
+    &__platform {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        padding: 10px;
+    }
+    &__platform-intro {
+        .font14;
+        .line (24px);
+        color: @white;
+        font-weight: @light;
+        margin: 0;
+        text-decoration: none;
+        @media(min-width:@tablet) {
+            .font18;
+        }
+    }
+    &__slogan {
+        display: none;
+    }
 }
-
+@media(min-width:@tablet) {
+    .program-download {
+        margin: 0 auto;
+        position: relative;
+        a {
+            margin-top: 26px;
+            @media(min-width:@desktop) {
+                margin-bottom: 20px;
+                margin-top: 50px;
+            }
+        }
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0 auto;
+            max-width: 620px;
+            @media(min-width:@desktop) {
+                max-width: 1200px;
+                padding-left: 130px;
+                padding-right: 130px;
+            }
+        }
+        &__intro-container {
+            @media(min-width:@tablet) {
+                margin: 0 auto;
+                max-width: 620px;
+            }
+            @media(min-width:@desktop) {
+                max-width: 1200px;
+                padding-left: 130px;
+                padding-right: 130px;
+            }
+        }
+        &__infoblock {
+            margin-bottom: 85px;
+            max-width: 300px;
+        }
+        &__slogan {
+            .font40;
+            .line(50px);
+            color: @white;
+            display: block;
+            font-weight: @light;
+            margin: -335px 0 0 0;
+            text-align: center;
+            width: 300px;
+        }
+        &__platform {
+            flex-direction: row;
+        }
+    }
 }
-
-
-  .platform {
-  list-style:none;
-
-  &-download__intro{
-    .font14;
-    .line (24px);
-    font-weight:@light;
-    text-decoration:none;
-    color:@white;
-  }
+@media(min-width:@desktop) {
+    .program-download {
+        margin-top: -200px;
+        padding-bottom: 37px;
+        padding-top: 100px;
+        z-index: 1;
+        &__slogan {
+            .font50;
+            .line(60px);
+            margin: 125px 0 0 0;
+            width: 305px;
+        }
+    }
 }
-
-
-
-
-
-

@@ -3,23 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <title>Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="wrap">
-      <header class="page-header">
-        <h1 class="visually-hidden">Поделитесь Вашей историей</h1>
-        <div class="page-header__logo">
-          <a class="page-header__logo-link"><img src="" width="" height="" alt="PINK"></a>
+    <header class="page-header">
+
+        <h1 class="visually-hidden">Приложение Пинк, Форма обратной связи</h1>
+        <div class="page-header__logo-container">
+          <div class="page-header__wrap">
+          <div class="page-header__logo">
+            <a class="page-header__logo-link"><img src="" width="" height="" alt="PINK"></a>
+          </div>
         </div>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+          <button class="page-header__toggle" type="button">Открыть меню</button>
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="pics.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="contest.html">Конкурс</a>
@@ -29,50 +34,82 @@
             </li>
           </ul>
         </nav>
-        <h2 class="customer-pictures__title other">Конкурс на самое безбашное путешествие с Пинк</h2>
       </header>
       <main class="page-main submit-form">
+        <section class="page__intro">
+          <div class="page__intro-wrap">
+            <h2 class="page__intro-slogan page__intro-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          </div>
+        </section>
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <div class="submit-form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</div>
+
+        <div class="submit-form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <p>Пожалуйста, заполните форму ниже:</p>
+        </div>
+
         <form class="submit-form__fields" action="https://echo.htmlacademy.ru" method="post">
+
           <fieldset class="submit-form__name">
-            <label class="submit-form__label--text">Фамилия:
+            <div class="submit-form__wrap">
+            <label class="submit-form__label--text">
+              <span class="submit-form__label--title">Фамилия:</span>
             <input class="submit-form__username" type="text" name="surname" placeholder="Укажите фамилию *" required>
             </label>
-            <label class="submit-form__label--text">Имя:
+            <label class="submit-form__label--text">
+              <span class="submit-form__label--title">Имя:</span>
             <input class="submit-form__username" type="text" name="name" placeholder="Введите ваше имя *" required>
             </label>
-            <label class="submit-form__label--text">Отчество:
+            <label class="submit-form__label--text">
+              <span class="submit-form__label--title">Отчество:</span>
             <input class="submit-form__username" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
+            </div>
           </fieldset>
+
           <fieldset class="submit-form__achievments">
-            <legend class="submit-form__title">Ваши безбашенные достижения в путешествии</legend>
+           <span class="submit-form__title">Ваши безбашенные достижения в путешествии</span>
+            <div class="submit-form__container">
+              <div class="submit-form__column">
             <label class="submit-form__label--select">
             <input class="submit-form__checkbox" id="shark" type="checkbox" name="shark-selfe" value="yes" checked>Сделал селфи с акулой</label>
             <label class="submit-form__label--select">
             <input class="submit-form__checkbox" id="sunburn" type="checkbox" name="sun-burn" value="yes" checked>Обгорел на пляже</label>
+          </div>
+           <div class="submit-form__column">
             <label class="submit-form__label--select">
             <input class="submit-form__checkbox" id="chuck" type="checkbox" name="norris-seen" value="yes">Видел Чака Норриса</label>
             <label class="submit-form__label--select">
             <input class="submit-form__checkbox" id="souvenirs" type="checkbox" name="souvenirs-purchase" value="yes">Накупил сувениров</label>
+          </div>
+           <div class="submit-form__column">
             <label class="submit-form__label--select">
             <input class="submit-form__checkbox" id="tower" type="checkbox" name="tower-defended" value="yes" checked>Удержал башню</label>
             <label class="submit-form__label--select">
             <input class="submit-form__checkbox" id="ravage" type="checkbox" name="hotel-ravaged" value="yes">Разгромил отель</label>
+          </div>
+            </div>
           </fieldset>
+
           <fieldset class="submit-form__contacts">
-            <label class="submit-form__label--text">Номер телефона:
+            <span class="submit-form__title mobile-hidden">Контактная информация</span>
+            <div class="submit-form__container">
+            <label class="submit-form__label--text">
+              <span class="submit-form__label--title">Номер телефона:</span>
             <input class="submit-form__username" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
             </label>
-            <label class="submit-form__label--text">Адрес почты:
+            <label class="submit-form__label--text">
+              <span class="submit-form__label--title">Адрес почты:</span>
             <input class="submit-form__username" type="email" name="email" placeholder="Введите почту *" required>
             </label>
+            </div>
           </fieldset>
+
           <fieldset class="submit-form__platform">
-            <legend class="submit-form__title">С каким приложением путешествовали?</legend>
+            <span class="submit-form__title">С каким приложением путешествовали?</span>
+            <div class="submit-form__container">
+
             <label class="submit-form__label--select">
-            <input type="radio" id="iOS" name="plarform" value="iOS" checked>Pink на iOS
+            <input type="radio" id="iOS" name="plarform" value="iOS" checked>Pink для iOS
             </label>
             <label class="submit-form__label--select">
             <input type="radio" id="Android" name="plarform" value="Android">Pink на Android
@@ -80,39 +117,55 @@
             <label class="submit-form__label--select">
             <input type="radio" id="Windows-Phone" name="plarform" value="Windows-Phone">Windows Phone
             </label>
+            </div>
           </fieldset>
+
           <fieldset class="submit-form__feedback">
-            <legend class="submit-form__title">Опишите свои эмоции</legend>
-            <textarea name="mail_txt" id="mail" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <span class="submit-form__title">Опишите свои эмоции</span>
+            <textarea class="submit-form-textarea" name="mail_txt" id="mail" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
+          <div class="submit-form__button-container">
           <button class="submit-form button" type="submit" value="Отправить">Отправить форму</button>
-          <span class="submit-form__asterix"><sup>*</sup> &ndash; Обязательные поля</span>
+          <span class="submit-form__asterix"><sup>*</sup>  &#8212; Обязательные<span class="desktop-visible"> для заполнения</span> поля</span>
+          </div>
         </form>
       </main>
-      <footer class="page-footer__other-pages">
-        <div class="page-footer__middle">
-          <div class="page-footer__logo">
-            <a class="page-footer__logo-link" href="index.html"><img src="" width="" height="" alt="PINK"></a>
-          </div>
-          <ul class="page-footer social-buttons">
-            <li class="social-buttons__icon"><a class="social-buttons__twitter" href="https://twitter.com/">Твиттер</a></li>
-            <li class="social-buttons__icon"><a class="social-buttons__twitter" href="https://www.facebook.com/">Фейсбук</a></li>
-            <li class="social-buttons__icon"><a class="social-buttons__twitter" href="https://www.youtube.com/">Ютюб</a></li>
-          </ul>
-           <p class="page-footer__academy">Разработано
-            <a class="page-footer__academy--link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+      <div class="wrap">
+        <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link" href="index.html">
+          <img src="" width="" height="" alt="PINK">
+          </a>
         </div>
-      </footer>
+        <ul class="page-footer_photo social-buttons">
+          <li class="social-buttons__icon">
+            <a class="social-buttons__icon-link twitter" href="https://twitter.com/">Твиттер</a>
+          </li>
+          <li class="social-buttons__icon">
+            <a class="social-buttons__icon-link facebook" href="https://www.facebook.com/">Фейсбук</a>
+          </li>
+          <li class="social-buttons__icon">
+            <a class="social-buttons__icon-link youtube" href="https://www.youtube.com/">Ютюб</a>
+          </li>
+        </ul>
+        <p class="page-footer__academy">Разработано
+          <a class="page-footer__academy--link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </p>
+      </div>
+    </footer>
+    </div>
       <section class="popup popup__error">
         <h3 class="popup__title">Что-то пошло не так!</h3>
         <p class="popup__report">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="popup button" name = "button" value = "OK" type = "button">OK</button>
+        <button class="popup__button" name = "button" value = "OK" type = "button">OK</button>
       </section>
       <section class="popup popup__sent">
         <h3 class="popup__title">Ваша заявка отправлена</h3>
         <p class="popup__report">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        <button class="popup button" name = "button" value = "Закрыть" type = "button">Закрыть окно</button>
+        <div class="popup__button-background">
+        <button class="popup__button" name = "button" value = "Закрыть" type = "button">Закрыть окно</button>
+      </div>
       </section>
-    </div>
   </body>
 </html>
