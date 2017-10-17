@@ -8,7 +8,7 @@
   </head>
   <body>
 
-      <header class="page-header">
+      <header class="page-header page-header--open page-header--nojs">
 
         <h1 class="visually-hidden">Приложение Пинк</h1>
         <div class="page-header__logo-container">
@@ -17,21 +17,21 @@
             <a class="page-header__logo-link"><img src="" width="" height="" alt="PINK"></a>
           </div>
         </div>
-          <button class="page-header__toggle" type="button">Открыть меню</button>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
+        <nav class="main-nav main-nav--open main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="contest.html">Конкурс</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -39,7 +39,7 @@
       </header>
       <main class="page-main">
         <h2 class="visually-hidden">Информация о приложении</h2>
-        <section class="program-download index">
+       <section class="program-download index">
           <h3 class="visually-hidden">Скачивание приложения</h3>
           <div class="program-download__intro-container">
             <h2 class=program-download__slogan>Взгляните на&nbsp;жизнь иначе!</h2>
@@ -101,34 +101,57 @@
         <section class="slider-quotes">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <div class="slider-quotes__container">
-            <div class="slider-temporary">
+
+              <p class="slider-quotes__arrow"><a class="slider-quotes__arrow-prev" href="#"><span class="visually-hidden">Предыдущая</span></a></p>
+              <p class="slider-quotes__arrow"><a class="slider-quotes__arrow-next" href="#"><span class="visually-hidden">Следующая</span></a></p>
               <input class="slider-quotes__button--checked" type="radio" id="btn-1" name="advertising-toggle" checked>
               <input class="slider-quotes__button" type="radio" id="btn-2" name="advertising-toggle">
               <input class="slider-quotes__button" type="radio" id="btn-3" name="advertising-toggle">
-            </div>
+
             <div class="slider-quotes__label">
               <label for="btn-1"></label>
               <label for="btn-2"></label>
               <label for="btn-3"></label>
             </div>
+            <div class="slider-quotes__frame">
+              <div class="slider-quotes__slides">
             <div class="slider-quotes__text">
               <p class="slider-quotes__mark">
-                <img src="img/quotes.png"  width="79" height="63" alt="">
+                <img src="img/quotes.png"  width="79" height="63" alt="кавычка">
               </p>
               <cite class="slider-quotes__author">Николай Петров</cite>
               <span class="slider-quotes__author-description">25 лет, водитель трамвая</span>
               <blockquote class="slider-quotes__quote">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</blockquote>
             </div>
+              <div class="slider-quotes__text">
+              <p class="slider-quotes__mark">
+                <img src="img/quotes.png"  width="79" height="63" alt="кавычка">
+              </p>
+              <cite class="slider-quotes__author">Николай Петров</cite>
+              <span class="slider-quotes__author-description">25 лет, водитель трамвая</span>
+              <blockquote class="slider-quotes__quote">&laquo;Perferendis qui, aut repellendus velit eaque. Incidunt minima, a similique distinctio, tempore nulla. Assumenda quis perspiciatis harum, expedita sit sequi vel magnam dolor. Commodi id quidem, nulla ea nobis alias.&raquo;</blockquote>
+            </div>
+            <div class="slider-quotes__text">
+              <p class="slider-quotes__mark">
+                <img src="img/quotes.png"  width="79" height="63" alt="кавычка">
+              </p>
+              <cite class="slider-quotes__author">Николай Петров</cite>
+              <span class="slider-quotes__author-description">25 лет, водитель трамвая</span>
+              <blockquote class="slider-quotes__quote">&laquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident similique consequuntur, natus ab, voluptatum quos quas facere id non, enim eius. Explicabo incidunt, impedit illum, itaque nihil et. Optio, quo.&raquo;</blockquote>
+            </div>
+          </div>
+        </div>
           </div>
         </section>
-        <section class="price-list">
+      <section class="price-list">
           <h3 class="visually-hidden">Прайс-лист</h3>
           <div class="price-list__slider">
-            <div class="slider-temporary">
+            <div class="price-list__container">
+
               <input class="price-list__slider-button" type="radio" id="btn-4" name="price-list-toggle">
               <input class="price-list__slider-button--checked" type="radio" id="btn-5" name="price-list-toggle" checked>
               <input class="price-list__slider-button" type="radio" id="btn-6" name="price-list-toggle">
-            </div>
+
             <div class="price-list__slider-label">
               <label for="btn-4"></label>
               <label for="btn-5"></label>
@@ -167,11 +190,12 @@
               </tr>
             </table>
           </div>
+        </div>
         </section>
       </main>
 
-    <section class="contacts-page__index">
-      <div class="contacts-page__wrap">
+  <section class="contacts-page__index">
+    <div class="contacts-page__wrap">
         <div class="contacts-page__top">
           <p class="contacts-page__title">
             Остались вопросы?
@@ -180,7 +204,7 @@
             Свяжитесь с нами!
           </p>
         </div>
-        <div class="contacts-page__middle">
+       <div class="contacts-page__middle">
           <div class="contacts-page__contacts">
             <p class="contacts-page__contacts-title">Звоните</p>
             <p class="contacts-page__contacts-details"><a class="contacts-page__phone" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
@@ -194,11 +218,11 @@
             <p class="contacts-page__contacts-details">ул. Большая<br> Конюшенная, 19/8</p>
           </div>
         </div>
-        <div class="contacts-page__map">
+       <div class="contacts-page__map">
         </div>
       </div>
     </section>
-    <footer class="page-footer page-footer__index">
+  <footer class="page-footer page-footer__index">
       <div class="page-footer__container">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
