@@ -1,6 +1,7 @@
 .price-list {
     background-color: @bg-grey;
     padding-bottom: 140px;
+    overflow: hidden;
     &__table {
         border-collapse: collapse;
         margin: 0 auto;
@@ -35,7 +36,7 @@
         background-color: @white;
         border: 3px solid @table-grey;
         color: @darkblue;
-        min-width: 280px;
+        min-width: 81vw;
         padding-bottom: 29px;
         padding-top: 30px;
         position: relative;
@@ -65,7 +66,7 @@
         content: "да";
         font-weight: normal;
         height: 33px;
-        left: 225px;
+        left: 82%;
         position: absolute;
         text-align: right;
         text-transform: uppercase;
@@ -81,7 +82,7 @@
         content: "нет";
         font-weight: normal;
         height: 33px;
-        left: 225px;
+        left: 82%;
         position: absolute;
         text-align: right;
         text-transform: uppercase;
@@ -90,6 +91,8 @@
         z-index: 20;
     }
 }
+
+
 @media(max-width:@tablet-1) {
     .price-list {
         padding-top: 70px;
@@ -104,6 +107,11 @@
             .font24;
             padding-bottom: 20px;
         }
+
+        &__table{
+        transform:translate(-250px);
+      }
+
     }
 }
 @media(min-width:@tablet) {
@@ -135,7 +143,15 @@
         &__features::after {
             left: 65px;
         }
+
+
     }
+
+    .price-list__slider-label{
+      display:none;
+    }
+
+
 }
 @media(min-width:@desktop) {
     .price-list {
@@ -164,3 +180,102 @@
         }
     }
 }
+
+
+.price-list__container{
+    width: auto;
+    min-width: 300px;
+    margin: 0 auto;
+    position:relative;
+}
+
+
+.price-list__slider
+{
+    position: relative;
+}
+
+.price-list__slider-button,
+.price-list__slider-button--checked
+{
+display:none;
+}
+
+.price-list__slider-label label
+{
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+    margin: 0 5px;
+
+    cursor: pointer;
+    vertical-align: top;
+
+    border: 4px solid @button-grey;
+    border-radius: 50%;
+
+
+}
+
+.price-list__slider-label
+{
+    position: absolute;
+    z-index: 10;
+    margin:0 auto;
+    right: 40%;
+    bottom: -50px;
+}
+
+#btn-4:checked ~ .price-list__slider-label label[for="btn-4"],
+#btn-5:checked ~ .price-list__slider-label label[for="btn-5"],
+#btn-6:checked ~ .price-list__slider-label label[for="btn-6"]
+{
+  position:relative;
+  width:12px;
+  height:12px;
+background-color: #FFFFFF;
+    top: -2px;
+    left: 1px;
+    border: 3px solid #1d2631;
+}
+
+
+#btn-4:checked ~ .price-list__table
+{
+  transform:translate(6vw);
+  transition: .3s;
+}
+
+#btn-5:checked ~ .price-list__table
+{
+  transform:translate(-74vw);
+  transition: .3s;
+}
+
+#btn-6:checked ~ .price-list__table
+{
+  transform:translate(-156vw);
+  transition: .3s;
+}
+
+@media(min-width:@tablet){
+#btn-4:checked ~ .price-list__table
+{
+  transform:translate(0vw);
+  transition: .3s;
+}
+
+#btn-5:checked ~ .price-list__table
+{
+  transform:translate(0vw);
+  transition: .3s;
+}
+
+#btn-6:checked ~ .price-list__table
+{
+  transform:translate(0vw);
+  transition: .3s;
+}
+
+  }

@@ -7,32 +7,34 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-      <header class="page-header">
+      <header class="page-header page-header--open page-header--nojs">
+
         <h1 class="visually-hidden">Приложение Пинк, Фотогалерея</h1>
         <div class="page-header__logo-container">
           <div class="page-header__wrap">
           <div class="page-header__logo">
-            <a class="page-header__logo-link"><img src="" width="" height="" alt="PINK"></a>
+            <a class="page-header__logo-link" href="index.html"><img src="" width="" height="" alt="PINK"></a>
           </div>
         </div>
-          <button class="page-header__toggle" type="button">Открыть меню</button>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
+        <nav class="main-nav main-nav--open">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link">Фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="contest.html">Конкурс</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
+
       </header>
     <main class="page-main">
       <div class="wrap">
@@ -47,7 +49,7 @@
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </div>
         <article class="gallery__picture--panoram">
-          <picture>
+          <picture class="gallery__picture-container">
           <source media="(min-width: @desktop)" srcset="img/panorama-desktop@2x.jpg 2x,
                                             img/panorama-desktop@1x.jpg">
           <source media="(min-width: @tablet)" srcset="img/panorama-tablet@2x.jpg 2x,
@@ -67,7 +69,7 @@
         </article>
           <div class="gallery__picture-wrap">
           <article class="gallery__picture">
-          <picture>
+          <picture class="gallery__picture-container">
           <source media="(min-width: @desktop)" srcset="img/photo-car-mobile@2x.jpg 2x,
                                             img/photo-car-mobile@1x.jpg">
           <source media="(min-width: @tablet)" srcset="img/photo-car-mobile@2x.jpg 2x,
@@ -83,7 +85,7 @@
             </div>
           </article>
           <article class="gallery__picture">
-          <picture>
+          <picture class="gallery__picture-container">
           <source media="(min-width: @desktop)" srcset="img/photo-drumset-mobile@2x.jpg 2x,
                                             img/photo-drumset-mobile@1x.jpg">
           <source media="(min-width: @tablet)" srcset="img/photo-drumset-mobile@2x.jpg 2x,
@@ -99,7 +101,7 @@
             </div>
           </article>
           <article class="gallery__picture">
-            <picture>
+            <picture class="gallery__picture-container">
           <source media="(min-width: @desktop)" srcset="img/photo-window-mobile@2x.jpg 2x,
                                             img/photo-window-mobile@1x.jpg">
           <source media="(min-width: @tablet)" srcset="img/photo-window-mobile@2x.jpg 2x,
@@ -115,7 +117,7 @@
             </div>
           </article>
           <article class="gallery__picture">
-          <picture>
+          <picture class="gallery__picture-container">
           <source media="(min-width: @desktop)" srcset="img/photo-fair-mobile@2x.jpg 2x,
                                             img/photo-fair-mobile@1x.jpg">
           <source media="(min-width: @tablet)" srcset="img/photo-fair-mobile@2x.jpg 2x,
@@ -131,7 +133,7 @@
             </div>
           </article>
           <article class="gallery__picture">
-          <picture>
+          <picture class="gallery__picture-container">
           <source media="(min-width: @desktop)" srcset="img/photo-pov-mobile@2x.jpg 2x,
                                             img/photo-pov-mobile@1x.jpg">
           <source media="(min-width: @tablet)" srcset="img/photo-pov-mobile@2x.jpg 2x,
@@ -147,7 +149,7 @@
               </div>
           </article>
           <article class="gallery__picture">
-          <picture>
+          <picture class="gallery__picture-container">
           <source media="(min-width: @desktop)" srcset="img/photo-wing-mobile@2x.jpg 2x,
                                             img/photo-wing-mobile@1x.jpg">
           <source media="(min-width: @tablet)" srcset="img/photo-wing-mobile@2x.jpg 2x,
@@ -171,7 +173,7 @@
           <div class="picture-editor__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</div>
           <div class="picture-editor__wrap">
           <div class="picture-editor__container">
-          <picture>
+          <picture class="gallery__picture-container">
                 <source media="(min-width: @desktop)" srcset="#,#">
                 <source media="(min-width: @tablet)" srcset="#,#">
                 <source media="(max-width: @tablet-1)" srcset="#,#">
