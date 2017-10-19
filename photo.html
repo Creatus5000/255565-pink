@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Pictures</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+    if (!document.querySelector(".ipad")) {
+      document.write('<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimal-ui">');
+    } else {
+      document.write('<meta name="viewport" content="minimal-ui">');
+    }
+  </script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -30,7 +36,7 @@
               <a class="main-nav__list-link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link">Фотографии</a>
+              <a class="main-nav__list-link main-nav__list-active">Фотографии</a>
             </li>
             <li class="main-nav__list-item">
               <a class="main-nav__list-link" href="form.html">Конкурс</a>
@@ -189,16 +195,22 @@
                 <img  class="picture-editor__image" src="/img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Edited-picture">
               </picture>
           <form class="picture-editor__tools">
-             <div class="picture-editor__labels">
-              <label class="picture-editor__icon picture-editor__icon--crop" for="crop-tool"><input class="picture-editor__radio" type="radio" id="crop-tool" name="radio-editor">Кадрирование</label>
+
+              <input class="picture-editor__radio" type="radio" id="crop-tool" name="radio-editor" checked>
+              <input class="picture-editor__radio" type="radio" id="fill-tool" name="radio-editor">
+              <input class="picture-editor__radio" type="radio" id="contrast-tool" name="radio-editor">
+              <div class="picture-editor__labels">
+              <label class="picture-editor__icon picture-editor__icon--crop" for="crop-tool">Кадрирование</label>
               <label class="picture-editor__icon picture-editor__icon--fill" for="fill-tool">
-              <input class="picture-editor__radio" type="radio" id="fill-tool" name="radio-editor">Заливка</label>
-              <label class="picture-editor__icon picture-editor__icon--contrast" for="contrast-tool"><input class="picture-editor__radio" type="radio" id="contrast-tool" name="radio-editor">Контраст</label>
+              Заливка</label>
+              <label class="picture-editor__icon picture-editor__icon--contrast" for="contrast-tool">Контраст</label>
             </div>
             <div class="picture-editor__tools-container">
-              <input class="picture-editor__range" type="range" name="crop" id="crop-tool">
-              <input class="picture-editor__range" type="range" name="fill" id="fill-tool">
-              <input class="picture-editor__range" type="range" name="contrast" id="contrast-tool">
+              <input class="picture-editor__range" type="range" name="crop" id="crop_tool">
+
+              <input class="picture-editor__range" type="range" name="fill" id="fill_tool">
+
+              <input class="picture-editor__range" type="range" name="contrast" id="contrast_tool">
             </div>
             <div class="picture-editor__buttons">
             <input class="picture-editor__submit" type="submit" value="Запостить">

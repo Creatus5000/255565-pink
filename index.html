@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Pink - Main</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+    if (!document.querySelector(".ipad")) {
+      document.write('<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimal-ui">');
+    } else {
+      document.write('<meta name="viewport" content="minimal-ui">');
+    }
+  </script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -28,7 +34,7 @@
         <nav class="main-nav main-nav--open main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link">Главная</a>
+              <a class="main-nav__list-link main-nav__list-active">Главная</a>
             </li>
             <li class="main-nav__list-item">
               <a class="main-nav__list-link" href="photo.html">Фотографии</a>
@@ -179,7 +185,7 @@
               <tr>
                 <th class="price-list__header price-list__header--empty"></th>
                 <th class="price-list__header price-list__header--greyborder">База</th>
-                <th class="price-list__header price-list__header--greyborder">Стандарт</th>
+                <th class="price-list__header price-list__header--greyborder price-list__header-hit">Стандарт</th>
                 <th class="price-list__header">Анлим</th>
               </tr>
               <tr>

@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+    if (!document.querySelector(".ipad")) {
+      document.write('<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimal-ui">');
+    } else {
+      document.write('<meta name="viewport" content="minimal-ui">');
+    }
+  </script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -33,7 +39,7 @@
               <a class="main-nav__list-link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link">Конкурс</a>
+              <a class="main-nav__list-link main-nav__list-active">Конкурс</a>
             </li>
             <li class="main-nav__list-item">
               <a class="main-nav__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
