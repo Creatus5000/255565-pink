@@ -12,24 +12,22 @@
         font-weight: bold;
         position: relative;
         text-decoration: none;
+        padding:18px 25px 18px 25px;
+        border:3px solid @white;
+        border-radius:50px;
+        line-height:12px;
         @media(min-width:@desktop) {
             .font21;
         }
     }
-    a {
-        color: @white;
-        display: block;
-        font-weight: bold;
-        padding: 18px 10px;
-        text-decoration: none;
-    }
+
     &__platform {
         display: flex;
         flex-direction: row;
         justify-content: center;
         list-style: none;
-        margin-bottom: 15px;
-        margin-top: 25px;
+        margin-bottom: 0px;
+        margin-top: 10px;
         padding: 10px;
     }
     &__platform-intro {
@@ -47,19 +45,39 @@
         display: none;
     }
 }
+
+.program-download__platform-ios,
+.program-download__platform-android,
+.program-download__platform-windows{
+         color: @white;
+        display: block;
+        font-weight: bold;
+        margin:20px 20px 10px 20px;
+        text-decoration: none;
+}
+
+.program-download__platform-ios{
+  margin-top:12px;
+}
+
+.program-download__button:hover{
+background-color:@white;
+color:@crimson;
+
+}
+
+.program-download__button:active{
+color:@crimson-active;
+
+}
+
 @media(min-width:@tablet) {
     .program-download {
         margin: 0 auto;
         padding-top:535px;
         margin-top:-110px;
         position: relative;
-        a {
-            margin-top: 26px;
-            @media(min-width:@desktop) {
-                margin-bottom: 20px;
-                margin-top: 50px;
-            }
-        }
+
         &__container {
             display: flex;
             flex-direction: column;
@@ -100,9 +118,23 @@
         }
         &__platform {
             flex-direction: row;
+            padding-bottom:25px;
         }
     }
+
+.program-download__button{
+  margin-top:30px;
+    }
+
+.program-download__platform-ios{
+margin-top:25px;
 }
+.program-download__platform-android,
+.program-download__platform-windows{
+  margin-top:32px;
+}
+}
+
 @media(min-width:@desktop) {
     .program-download {
         margin-top: -200px;
@@ -116,4 +148,19 @@
             width: 305px;
         }
     }
+    .program-download__platform{
+      padding-bottom:40px;
+    }
+
+.program-download__button{
+  margin-top:52px;
+    }
+
+.program-download__platform-ios{
+  margin-top:50px;
+}
+.program-download__platform-android,
+.program-download__platform-windows{
+  margin-top:60px;
+}
 }

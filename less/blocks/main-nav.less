@@ -51,12 +51,12 @@
     }
 }
 
-.main-nav__list-link:hover{
+.main-nav__list-link:hover:not(.main-nav__list-active){
   color:@crimson;
 
 }
 
-.main-nav__list-link:active{
+.main-nav__list-link:active:not(.main-nav__list-active){
   color:@crimson-active;
 }
 
@@ -80,5 +80,15 @@
 .main-nav__list li:first-child{
   border:0;
   box-shadow:none;
+}
+
+.main-nav__list-active::after{
+  position:relative;
+  display:block;
+  content:"";
+  border-top:2px solid @white;
+  width:100%;
+  top:10px;
+
 }
 }
