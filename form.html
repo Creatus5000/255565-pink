@@ -83,22 +83,22 @@
            <span class="submit-form__title">Ваши безбашенные достижения в путешествии</span>
             <div class="submit-form__container">
               <div class="submit-form__column">
-            <label class="submit-form__label--select">
-            <input class="submit-form__checkbox" id="shark" type="checkbox" name="shark-selfe" value="yes" checked>Сделал селфи с акулой</label>
-            <label class="submit-form__label--select">
-            <input class="submit-form__checkbox" id="sunburn" type="checkbox" name="sun-burn" value="yes" checked>Обгорел на пляже</label>
+            <input class="submit-form__checkbox" id="shark" type="checkbox" name="shark-selfe" value="yes" checked>
+            <label class="submit-form__label--select" for="shark">Сделал селфи с акулой</label>
+            <input class="submit-form__checkbox" id="sunburn" type="checkbox" name="sun-burn" value="yes" checked>
+            <label class="submit-form__label--select" for="sunburn">Обгорел на пляже</label>
           </div>
            <div class="submit-form__column">
-            <label class="submit-form__label--select">
-            <input class="submit-form__checkbox" id="chuck" type="checkbox" name="norris-seen" value="yes">Видел Чака Норриса</label>
-            <label class="submit-form__label--select">
-            <input class="submit-form__checkbox" id="souvenirs" type="checkbox" name="souvenirs-purchase" value="yes">Накупил сувениров</label>
+            <input class="submit-form__checkbox" id="chuck" type="checkbox" name="norris-seen" value="yes">
+            <label class="submit-form__label--select" for="chuck">Видел Чака Норриса</label>
+             <input class="submit-form__checkbox" id="souvenirs" type="checkbox" name="souvenirs-purchase" value="yes">
+            <label class="submit-form__label--select" for="souvenirs">Накупил сувениров</label>
           </div>
            <div class="submit-form__column">
-            <label class="submit-form__label--select">
-            <input class="submit-form__checkbox" id="tower" type="checkbox" name="tower-defended" value="yes" checked>Удержал башню</label>
-            <label class="submit-form__label--select">
-            <input class="submit-form__checkbox" id="ravage" type="checkbox" name="hotel-ravaged" value="yes">Разгромил отель</label>
+            <input class="submit-form__checkbox" id="tower" type="checkbox" name="tower-defended" value="yes" checked>
+            <label class="submit-form__label--select" for="tower">Удержал башню</label>
+            <input class="submit-form__checkbox" id="ravage" type="checkbox" name="hotel-ravaged" value="yes">
+            <label class="submit-form__label--select" for="ravage">Разгромил отель</label>
           </div>
             </div>
           </fieldset>
@@ -107,11 +107,11 @@
             <span class="submit-form__title mobile-hidden">Контактная информация</span>
             <div class="submit-form__container">
             <label class="submit-form__label--text">
-              <span class="submit-form__label--title">Номер телефона:</span>
+              <span class="submit-form__label--title submit-form__phone">Номер телефона:</span>
             <input class="submit-form__username" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
             </label>
             <label class="submit-form__label--text">
-              <span class="submit-form__label--title">Адрес почты:</span>
+              <span class="submit-form__label--title submit-form__email">Адрес почты:</span>
             <input class="submit-form__username" type="email" name="email" placeholder="Введите почту *" required>
             </label>
             </div>
@@ -120,16 +120,13 @@
           <fieldset class="submit-form__platform">
             <span class="submit-form__title">С каким приложением путешествовали?</span>
             <div class="submit-form__container">
-
-            <label class="submit-form__label--select">
-            <input type="radio" id="iOS" name="plarform" value="iOS" checked>Pink для iOS
-            </label>
-            <label class="submit-form__label--select">
-            <input type="radio" id="Android" name="plarform" value="Android">Pink на Android
-            </label>
-            <label class="submit-form__label--select">
-            <input type="radio" id="Windows-Phone" name="plarform" value="Windows-Phone">Windows Phone
-            </label>
+            <input class="submit-form__radio" type="radio" id="iOS" name="plarform" value="iOS" checked>
+            <label class="submit-form__label--select" for="iOS">
+            Pink для iOS</label>
+            <input class="submit-form__radio" type="radio" id="Android" name="plarform" value="Android">
+            <label class="submit-form__label--select" for="Android">Pink на Android</label>
+            <input class="submit-form__radio" type="radio" id="Windows-Phone" name="plarform" value="Windows-Phone">
+            <label class="submit-form__label--select" for="Windows-Phone">Windows Phone</label>
             </div>
           </fieldset>
 

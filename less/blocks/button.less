@@ -5,8 +5,25 @@
       color:white;
       .font18;
       .line(30px);
+      border:0;
 
     }
+
+  .button:hover,
+  .popup__button:hover{
+    background-color:@cucumber-hover;
+  }
+
+
+  .button:active,
+  .popup__button:active{
+    color:@cucumber-active;
+  }
+
+.button:disabled,
+.button[disabled]{
+  background-color:@table-grey;
+}
 
   .popup__button{
 
@@ -26,4 +43,16 @@ margin-top:50px;
 margin-bottom:50px;
 margin-right:auto;
 margin-left:auto;
+}
+
+@media(max-width:@tablet-1){
+  .popup__button{
+    width:85%;
+  }
+}
+
+@media(min-width:@tablet){
+  .popup__sent .popup__button{
+    width:70%;
+  }
 }
