@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #contacts-page__map {
+        height: 200px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="contacts-page__map"></div>
+    <script>
+      function initMap() {
+  var map = new google.maps.Map(document.getElementById('contacts-page__map'), {
+    zoom: 17,
+    center: {lat: 59.936235, lng: 30.321826}
+  });
+
+  var image = {
+      path: google.maps.SymbolPath.CIRCLE,
+    scale: 10,
+    strokeColor: '#fff',
+    fillColor: '#d22856',
+    fillOpacity: 1
+    };
+  var beachMarker = new google.maps.Marker({
+    position: {lat: 59.936235, lng: 30.321826},
+    map: map,
+    icon: image
+  });
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvRnHf5NDd_xbfhoXwmbs5ZFplrGCio5c&callback=initMap">
+    </script>
+  </body>
+</html>
