@@ -2,6 +2,7 @@
     &__index {
         background-color: @white;
         margin: 0 auto;
+        position:relative;
     }
     &__top {
         margin-bottom: 30px;
@@ -45,24 +46,10 @@
         color: @darkblue;
         text-decoration: none;
     }
-    &__map {
-        background-image: url("../img/bg-map-mobile@1x-2.png");
-        background-position: bottom center;
-        background-repeat: no-repeat;
-        height: 200px;
-        margin: 0 auto;
-        width: 320px;
-    }
 }
-.social-buttons {
-    &__icon {
-        list-style: none;
-    }
-    a {
-        color: @darkblue;
-        text-decoration: none;
-    }
-}
+
+
+
 @media(min-width:@tablet) {
     .contacts-page {
         &__index {
@@ -94,18 +81,13 @@
         &__contacts {
             width: 280px;
         }
-        &__map {
-            background-image: url("../img/bg-map-tablet@1x.png");
-            background-position: bottom center;
-            background-repeat: no-repeat;
-            height: 377px;
-            width: @tablet;
-        }
+
         &__wrap {
             margin: 0 auto;
             width: @tablet;
         }
     }
+
 }
 @media(min-width:@desktop) {
     .contacts-page {
@@ -137,13 +119,7 @@
         &__contacts-title {
             margin-bottom: 30px;
         }
-        &__map {
-            background-image: url("../img/bg-map-desktop@1xd.png");
-            background-position: bottom center;
-            background-repeat: no-repeat;
-            height: auto;
-            width: 950px;
-        }
+
         &__wrap {
             width: @desktop;
         }
