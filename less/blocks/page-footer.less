@@ -113,3 +113,96 @@
         }
 
 
+
+
+
+.page-footer__logo-desktop,
+.page-footer__logo-desktop--hover,
+.page-footer__logo-tablet,
+.page-footer__logo-tablet--hover{
+  display:none;
+}
+
+
+.page-footer__logo-link{
+  position:relative;
+}
+
+
+.page-footer__logo-mobile,
+.page-footer__logo-mobile--hover{
+  width:146px;
+  height:40px;
+  margin-left:0px;
+  position:absolute;
+  z-index:100;
+  display:block;
+  cursor:pointer;
+  left:-70px;
+
+  }
+
+  .page-footer__logo-mobile--hover{
+  z-index:80;
+
+}
+
+.page-footer__logo-link:hover .page-footer__logo-mobile{
+  opacity:0;
+}
+
+.page-footer__logo-link:active .page-footer__logo-mobile{
+  opacity:.6;
+}
+
+.page-footer__logo-link:active .page-footer__logo-mobile--hover{
+  opacity:0;
+}
+
+
+@media(min-width:@tablet){
+.page-footer__logo-mobile,
+.page-footer__logo-mobile--hover{
+  left:0px;
+}
+}
+
+
+@media(min-width:@desktop){
+
+
+.page-footer__logo-mobile,
+.page-footer__logo-mobile--hover{
+  display:none;
+}
+
+.page-footer__logo-desktop,
+.page-footer__logo-desktop--hover{
+  width:146px;
+  height:40px;
+  margin-top:12px;
+  margin-left:-120px;
+  position:absolute;
+  z-index:100;
+  display:block;
+  cursor:pointer;
+}
+
+.page-footer__logo-desktop--hover{
+  z-index:80;
+
+}
+
+.page-footer__logo-link:hover .page-footer__logo-desktop{
+  opacity:0;
+}
+
+.page-footer__logo-link:active .page-footer__logo-desktop{
+  opacity:.6;
+}
+
+.page-footer__logo-link:active .page-footer__logo-desktop--hover{
+  opacity:0;
+}
+}
+

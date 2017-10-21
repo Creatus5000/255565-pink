@@ -79,7 +79,6 @@ width:320px;
 margin:0 auto;
 padding-top:1px;
 padding-bottom:1px;
-position:relative;
 
 }
 
@@ -93,13 +92,13 @@ position:relative;
   padding-left:0;
   padding-right:0;
   padding-top:0;
-  padding-bottom:31px;
+  padding-bottom:25px;
   border:0;
 
 }
 
 .submit-form__contacts{
-  padding-top:21px;
+  padding-top:33px;
   position:relative;
 }
 
@@ -125,29 +124,18 @@ position:relative;
 .submit-form__label--title{
   margin-left:30px;
   .line(30px);
-  position:relative;
 }
 
 .submit-form__username{
   width:280px;
   height:64px;
   margin-left:10px;
-  border: 2px solid @table-grey;
+}
+
+.submit-form__username{
   padding:20px;
   margin-top:2px;
 }
-
-.submit-form__username:hover{
-   border: 2px solid @black;
-   outline:none;
-}
-
-.submit-form__username:active{
-   border: 2px solid @crimson;
-   outline:none;
-}
-
-
 
 .submit-form__achievments{
 
@@ -157,67 +145,6 @@ position:relative;
   padding-bottom:0;
 
   }
-
-.submit-form__checkbox{
-  display:none;
-}
-
-
-.submit-form__checkbox + .submit-form__label--select{
-  cursor:pointer;
-
-}
-
-.submit-form__checkbox:not(checked) {
-  position: absolute;
-
-}
-
-.submit-form__checkbox:not(checked) + .submit-form__label--select {
-  position: relative;
-
-}
-
-.submit-form__checkbox:not(checked) + .submit-form__label--select:before {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: 18px;
-  width: 40px;
-  height: 40px;
-  border: 2px solid @table-grey;
-  background: @white;
-}
-
-.submit-form__checkbox:not(checked):hover + .submit-form__label--select::before{
- border: 2px solid @black;
-
-}
-
-.submit-form__checkbox:not(checked):active + .submit-form__label--select::before{
- border: 2px solid @crimson;
-
-}
-
-
-.submit-form__checkbox:not(checked) + .submit-form__label--select::after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 24px;
-  width: 31px;
-  height: 31px;
-  background-size:23px 17px;
-  background-image:url("../img/icon-yes-red.svg");
-  background-repeat:no-repeat;
-  background-position:center center;
-  opacity: 0;
-  transition: all .2s;
-}
-.submit-form__checkbox:checked + .submit-form__label--select:after {
-  opacity: 1;
-}
-
 
 .submit-form__wrap{
 width:320px;
@@ -251,71 +178,15 @@ margin-top:20px;
 }
 
 .submit-form__label--select{
-  margin-top:30px;
-  margin-bottom:52px;
+  margin-top:15px;
+  margin-bottom:40px;
   padding-left:90px;
 }
 
-.submit-form__radio{
-  display:none;
-}
-
-.submit-form__radio + .submit-form__label--select{
-  cursor:pointer;
-}
-
-.submit-form__radio:not(checked) {
-  position: absolute;
-
-}
-.submit-form__radio:not(checked) + .submit-form__label--select {
-  position: relative;
-
-}
-
-.submit-form__radio:not(checked) + .submit-form__label--select:before {
-  content: '';
-  position: absolute;
-  top: 19px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  border: 2px solid @table-grey;
-  border-radius: 50%;
-  background: @white;
-}
-
-.submit-form__radio:not(checked):hover + .submit-form__label--select:before{
-   border: 2px solid @black;
-}
-
-.submit-form__radio:not(checked):active + .submit-form__label--select:before{
-   border: 2px solid @crimson;
-}
-
-.submit-form__radio:not(checked) + .submit-form__label--select::after {
-  content: '';
-  position: absolute;
-  top: 32px;
-  left: 33px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background:@crimson;
-  opacity: 0;
-  transition: all .2s;
-}
-.submit-form__radio:checked + .submit-form__label--select:after {
-  opacity: 1;
-}
-
-
-
 .submit-form__platform .submit-form__label--select{
-  margin-top:10px;
-  margin-bottom:16px;
+  margin-top:20px;
+  margin-bottom:24px;
   text-align:left;
-  padding-top:20px;
   padding-left:89px;
   .line(38px);
 }
@@ -324,7 +195,7 @@ margin-top:20px;
 .submit-form__feedback{
 margin:0 auto;
 width:320px;
-padding-top:57px;
+padding-top:50px;
 margin-bottom:5px;
   display:flex;
   border:0;
@@ -343,10 +214,10 @@ margin-bottom:5px;
 .submit-form-textarea{
   width:280px;
   height:200px;
+  margin-top:10px;
   padding:20px;
   padding-top:15px;
   margin:0 auto;
-  margin-top:8px;
 }
 
 
@@ -429,10 +300,10 @@ padding:90px 85px 70px 85px;
 .submit-form__contacts .submit-form__label--text{
   display:flex;
   flex-direction:column;
-  padding-top:26px;
+  padding-top:21px;
   padding-left:55px;
   padding-right:65px;
-  padding-bottom:6px;
+  padding-bottom:14px;
 
 
 
@@ -450,34 +321,10 @@ padding:90px 85px 70px 85px;
     order:1;
 
   }
-
-  .submit-form__phone::after,
-  .submit-form__email::after{
- content: '';
-  position: absolute;
-  top: -71px;
-  left: 416px;
-  width: 65px;
-  height: 60px;
-  background: @table-grey;
-  background-image:url(../img/icon-phone.svg);
-  background-position:center center;
-  background-repeat:no-repeat;
-
-  }
-
-   .submit-form__email::after{
-    background-image:url(../img/icon-mail.svg)
-   }
-
-  .submit-form__username-email{
-    background:url(../img/icon-mail.svg);
-  }
 }
 
 .submit-form__label--title{
   margin-left:0px;
-  margin-top:13px;
 
 }
 
@@ -509,10 +356,6 @@ padding:90px 85px 70px 85px;
     margin-right: 90px;
 }
 
-.submit-form__achievments .submit-form__container{
-  padding-bottom:1px;
-}
-
 .submit-form__feedback .submit-form__title{
     margin-right:170px;
     margin-left:170px;}
@@ -522,15 +365,15 @@ margin-left:17px;
 }
 
 .submit-form__platform .submit-form__label--select{
-  padding-left:119px;
-      margin-top: 0px;
-    margin-bottom: 18px;
+  padding-left:120px;
+      margin-top: 5px;
+    margin-bottom: 24px;
 }
 
 .submit-form__achievments .submit-form__label--select{
   padding-left:120px;
-        margin-top: 25px;
-    margin-bottom: 52px;
+        margin-top: 12px;
+    margin-bottom: 39px;
 }
 
 .submit-form__username{
@@ -554,37 +397,7 @@ width:100%;
   border:2px solid @table-grey;
   width:620px;
   margin:0 auto 65px;
-  padding-bottom:25px;
 
-}
-
-.submit-form__checkbox:not(checked) + .submit-form__label--select:before{
-  top:-3px;
-  left:58px;
-}
-
-.submit-form__checkbox:not(checked) + .submit-form__label--select:after{
-  top:0;
-  left:63px;
-}
-
-.submit-form__radio:not(checked) + .submit-form__label--select:before {
-
-  top: 18px;
-  left: 60px;
-
-}
-
-.submit-form__radio:not(checked) + .submit-form__label--select:after {
-
-  top: 31px;
-  left: 73px;
-
-}
-
-.submit-form__contacts .submit-form__label--title{
-    margin-top: 9px;
-    margin-left: 26px;
 }
 
 .submit-form__contacts{
@@ -592,7 +405,7 @@ width:100%;
   border:2px solid @table-grey;
   width:600px;
   padding-top:0;
-  padding-bottom:15px;
+  padding-bottom:6px;
   margin-bottom:65px;
 }
 
@@ -721,15 +534,9 @@ align-items:flex-end;
 padding-left:55px;
 padding-right:55px;
 padding-top:20px;
-padding-bottom:1px;
+padding-bottom:7px;
 
 }
-
-.submit-form__contacts .submit-form__phone::after,
-.submit-form__contacts .submit-form__email::after{
-    left:288px;
-    top:-75px;
-  }
 
 .submit-form__contacts .submit-form__label--text{
 padding:0;
@@ -754,39 +561,17 @@ width:375px;
 
 .submit-form__achievments .submit-form__container{
   width:930px;
-  padding-bottom:0px;
+  padding-bottom:45px;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
 }
 
-.submit-form__checkbox:not(checked) + .submit-form__label--select:before {
-  top: -3px;
-  left: 56px;
- }
-
-.submit-form__checkbox:not(checked) + .submit-form__label--select:after {
-  top: -2px;
-  left: 60px;
-}
-
-.submit-form__radio:not(checked) + .submit-form__label--select::before{
-  left:75px;
-}
-
-.submit-form__radio:not(checked) + .submit-form__label--select::after{
-  left:88px;
-}
-
 .submit-form__achievments .submit-form__label--select {
-    padding-left: 115px;
-    margin-top: 23px;
-    margin-bottom: 54px;
+    padding-left: 120px;
+    margin-top: 12px;
+    margin-bottom: 25px;
   }
-
-.submit-form__platform .submit-form__label--select{
-  padding-left:133px;
-}
 
   .submit-form__achievments .submit-form__title{
     margin-left: 245px;

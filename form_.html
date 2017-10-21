@@ -13,7 +13,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
- <svg class="page-header__logo_svg" style="display:none;">
+        <svg class="page-header__logo_svg" style="display:none;">
       <defs>
       <symbol id="page-header__logo-mobile">
          <g>
@@ -194,13 +194,13 @@
      </defs>
     </svg>
 
-      <header class="page-header page-header--open page-header--nojs">
+    <header class="page-header page-header--open page-header--nojs">
 
-        <h1 class="visually-hidden">Приложение Пинк, Фотогалерея</h1>
+        <h1 class="visually-hidden">Приложение Пинк, Конкурс</h1>
         <div class="page-header__logo-container">
           <div class="page-header__wrap">
           <div class="page-header__logo">
-            <a class="page-header__logo-link" href="index.html">
+  <a class="page-header__logo-link" href="index.html">
             <svg class="page-header__logo-mobile">
                 <use xlink:href="#page-header__logo-mobile"></use>
             </svg>
@@ -278,22 +278,22 @@
            <span class="submit-form__title">Ваши безбашенные достижения в путешествии</span>
             <div class="submit-form__container">
               <div class="submit-form__column">
-            <input class="submit-form__checkbox" id="shark" type="checkbox" name="shark-selfe" value="yes" checked>
-            <label class="submit-form__label--select" for="shark">Сделал селфи с акулой</label>
-            <input class="submit-form__checkbox" id="sunburn" type="checkbox" name="sun-burn" value="yes" checked>
-            <label class="submit-form__label--select" for="sunburn">Обгорел на пляже</label>
+            <label class="submit-form__label--select">
+            <input class="submit-form__checkbox" id="shark" type="checkbox" name="shark-selfe" value="yes" checked>Сделал селфи с акулой</label>
+            <label class="submit-form__label--select">
+            <input class="submit-form__checkbox" id="sunburn" type="checkbox" name="sun-burn" value="yes" checked>Обгорел на пляже</label>
           </div>
            <div class="submit-form__column">
-            <input class="submit-form__checkbox" id="chuck" type="checkbox" name="norris-seen" value="yes">
-            <label class="submit-form__label--select" for="chuck">Видел Чака Норриса</label>
-             <input class="submit-form__checkbox" id="souvenirs" type="checkbox" name="souvenirs-purchase" value="yes">
-            <label class="submit-form__label--select" for="souvenirs">Накупил сувениров</label>
+            <label class="submit-form__label--select">
+            <input class="submit-form__checkbox" id="chuck" type="checkbox" name="norris-seen" value="yes">Видел Чака Норриса</label>
+            <label class="submit-form__label--select">
+            <input class="submit-form__checkbox" id="souvenirs" type="checkbox" name="souvenirs-purchase" value="yes">Накупил сувениров</label>
           </div>
            <div class="submit-form__column">
-            <input class="submit-form__checkbox" id="tower" type="checkbox" name="tower-defended" value="yes" checked>
-            <label class="submit-form__label--select" for="tower">Удержал башню</label>
-            <input class="submit-form__checkbox" id="ravage" type="checkbox" name="hotel-ravaged" value="yes">
-            <label class="submit-form__label--select" for="ravage">Разгромил отель</label>
+            <label class="submit-form__label--select">
+            <input class="submit-form__checkbox" id="tower" type="checkbox" name="tower-defended" value="yes" checked>Удержал башню</label>
+            <label class="submit-form__label--select">
+            <input class="submit-form__checkbox" id="ravage" type="checkbox" name="hotel-ravaged" value="yes">Разгромил отель</label>
           </div>
             </div>
           </fieldset>
@@ -302,11 +302,11 @@
             <span class="submit-form__title mobile-hidden">Контактная информация</span>
             <div class="submit-form__container">
             <label class="submit-form__label--text">
-              <span class="submit-form__label--title submit-form__phone">Номер телефона:</span>
+              <span class="submit-form__label--title">Номер телефона:</span>
             <input class="submit-form__username" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
             </label>
             <label class="submit-form__label--text">
-              <span class="submit-form__label--title submit-form__email">Адрес почты:</span>
+              <span class="submit-form__label--title">Адрес почты:</span>
             <input class="submit-form__username" type="email" name="email" placeholder="Введите почту *" required>
             </label>
             </div>
@@ -315,13 +315,16 @@
           <fieldset class="submit-form__platform">
             <span class="submit-form__title">С каким приложением путешествовали?</span>
             <div class="submit-form__container">
-            <input class="submit-form__radio" type="radio" id="iOS" name="plarform" value="iOS" checked>
-            <label class="submit-form__label--select" for="iOS">
-            Pink для iOS</label>
-            <input class="submit-form__radio" type="radio" id="Android" name="plarform" value="Android">
-            <label class="submit-form__label--select" for="Android">Pink на Android</label>
-            <input class="submit-form__radio" type="radio" id="Windows-Phone" name="plarform" value="Windows-Phone">
-            <label class="submit-form__label--select" for="Windows-Phone">Windows Phone</label>
+
+            <label class="submit-form__label--select">
+            <input type="radio" id="iOS" name="plarform" value="iOS" checked>Pink для iOS
+            </label>
+            <label class="submit-form__label--select">
+            <input type="radio" id="Android" name="plarform" value="Android">Pink на Android
+            </label>
+            <label class="submit-form__label--select">
+            <input type="radio" id="Windows-Phone" name="plarform" value="Windows-Phone">Windows Phone
+            </label>
             </div>
           </fieldset>
 
@@ -340,6 +343,7 @@
       <div class="page-footer__container">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
+
             <svg class="page-footer__logo-mobile">
                 <use xlink:href="#page-footer__logo-mobile"></use>
             </svg>
@@ -364,10 +368,6 @@
                 <svg class="page-footer__logo-desktop--hover">
                 <use xlink:href="#page-footer__logo-desktop--hover"></use>
             </svg>
-
-
-
-
           </a>
         </div>
         <ul class="page-footer_photo social-buttons">
