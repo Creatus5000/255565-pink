@@ -186,6 +186,16 @@ color:@button-grey4;
 
 }
 
+.picture-editor__icon--crop:hover::before{
+    background-image: url('../img/icon-editor-crop-grey.svg');
+    opacity:0.3;
+}
+
+.picture-editor__icon--crop:active::before{
+    background-image: url('../img/icon-editor-crop-grey.svg');
+    opacity:0.6;
+}
+
 .picture-editor__icon--fill::before{
   content:"";
   position:absolute;
@@ -195,6 +205,16 @@ color:@button-grey4;
   z-index:20;
   top:-45px;
   left:135px;
+}
+
+.picture-editor__icon--fill:hover::before{
+    background-image: url('../img/icon-editor-fill-grey.svg');
+    opacity:0.3;
+}
+
+.picture-editor__icon--fill:active::before{
+    background-image: url('../img/icon-editor-fill-grey.svg');
+    opacity:0.6;
 }
 
 .picture-editor__icon--contrast::before{
@@ -207,6 +227,17 @@ color:@button-grey4;
   top:-37px;
   left:225px;
 }
+
+.picture-editor__icon--contrast:hover::before{
+    background-image: url('../img/icon-editor-contrast-grey.svg');
+    opacity:0.3;
+}
+
+.picture-editor__icon--contrast:active::before{
+    background-image: url('../img/icon-editor-contrast-grey.svg');
+    opacity:0.6;
+}
+
 
 #crop-tool:checked ~ .picture-editor__tools-container input:first-of-type
 {
