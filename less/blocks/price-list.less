@@ -3,20 +3,19 @@
     padding-bottom: 140px;
     overflow: hidden;
     &__table {
-        border-collapse: collapse;
+        border-spacing:0;
         margin: 0 auto;
     }
     &__header, &__price {
         .font18;
         .line (30px);
         background-color: @darkblue;
-        border: 3px solid @darkblue;
+
         color: @white;
         text-transform: uppercase;
     }
     &__header--greyborder, &__price--greyborder {
-        border-left: 3px solid @table-grey;
-        border-right: 3px solid @table-grey;
+       border-right: 2px solid @table-grey;
     }
     &__header--empty, &__price--empty {
         background-color: transparent;
@@ -34,11 +33,11 @@
         .font14;
         .line (30px);
         background-color: @white;
-        border: 3px solid @table-grey;
+        border: 1px solid @table-grey;
         color: @darkblue;
         min-width: 81vw;
-        padding-bottom: 29px;
-        padding-top: 30px;
+        padding-bottom: 28px;
+        padding-top: 33px;
         position: relative;
         text-align: left;
         text-transform: uppercase;
@@ -95,13 +94,14 @@
 
 @media(max-width:@tablet-1) {
     .price-list {
-        padding-top: 70px;
+        padding-top: 60px;
+        padding-bottom:96px;
         &__header--empty, &__price--empty, &__features--column1 {
             display: none;
         }
         &__header {
             .font18;
-            padding-top: 12px;
+            padding-top: 18px;
         }
         &__price {
             .font24;
@@ -144,10 +144,11 @@
 @media(min-width:@tablet) {
     .price-list {
         padding-bottom: 75px;
-        padding-top: 40px;
+        padding-top: 42px;
         &__header {
             .font16;
-            padding-top: 7px;
+            padding-top: 12px;
+            padding-bottom:5px;
         }
         &__price {
             .font18;
@@ -205,10 +206,11 @@
 @media(min-width:@desktop) {
     .price-list {
         padding-top: 68px;
+        padding-bottom:95px;
         &__features {
             min-width: 235px;
-            padding-bottom: 30px;
-            padding-top: 30px;
+            padding-bottom: 32px;
+            padding-top: 26px;
         }
         &__features::after {
             left: 100px;

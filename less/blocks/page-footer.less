@@ -8,12 +8,10 @@
 .page-footer {
         margin: 0 auto;
         &__container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items:center;
-            margin: 0 auto;
-            padding: 12px 20px 40px 20px;
+            display: block;
+            width:320px;
+            margin:0 auto;
+            padding: 12px 65px 40px 65px;
             min-height:300px;
 
         }
@@ -21,7 +19,8 @@
 
             .font14;
             .line(5px);
-            margin-top: 27px;
+            margin-top: 56px;
+            margin-left:31px;
             display:flex;
             align-items:center;
             position: relative;
@@ -32,9 +31,12 @@
     }
 
           .page-footer__photo{
-          padding-top:20px;
+          padding-top:27px;
         }
 
+        .page-footer__form .page-footer__container{
+          padding-top:58px;
+        }
 
 }
 @media(min-width:@tablet) {
@@ -45,7 +47,7 @@
             flex-direction: row;
             justify-content: space-between;
             margin: 0 auto;
-            padding: 12px 20px 40px 20px;
+            padding: 10px 20px 40px 20px;
             width: @tablet;
         }
         &__academy {
@@ -62,6 +64,8 @@
         }
     }
 
+
+
           .page-footer__photo{
           padding-top:20px;
         }
@@ -73,11 +77,29 @@
         margin-top:25px;
         margin-left:0;
         }
+
+      .page-footer__index .page-footer__container{
+          padding-top:37px;
+        }
+        .page-footer__form .page-footer__container{
+          padding-top:18px;
+        }
+
+        .page-footer__index .page-footer__academy{
+        margin-top:12px;
+        }
+
+        .page-footer__form .page-footer__academy{
+        margin-top:12px;
+        }
+        .page-footer__photo .page-footer__academy{
+        margin-top:7px;
+        }
   }
     @media(min-width:@desktop) {
         .page-footer {
             &__container {
-                padding: 45px 130px 40px 130px;
+                padding: 45px 10px 40px 130px;
                 width: @desktop;
             }
             &__academy {
@@ -88,6 +110,15 @@
             }
         }
 
+        .page-footer__form .page-footer__container{
+          padding-top:46px;
+        }
+
+        .page-footer__index .page-footer__container{
+          padding-top:60px;
+        }
+
+
 
         .page-footer__photo{
           padding-top:42px;
@@ -95,6 +126,18 @@
 
         .page-footer__photo .social-buttons{
           padding-left:115px;
+        }
+
+        .page-footer__index .page-footer__academy{
+        margin-top:27px;
+        }
+
+        .page-footer__photo .page-footer__academy {
+          margin-top: 19px;
+        }
+
+        .page-footer__form .page-footer__academy{
+          margin-top:22px;
         }
     }
 
@@ -114,7 +157,7 @@
 
 
 
-
+/*logo - start*/
 
 .page-footer__logo-desktop,
 .page-footer__logo-desktop--hover,
@@ -138,7 +181,8 @@
   z-index:100;
   display:block;
   cursor:pointer;
-  left:-70px;
+  left:25px;
+
 
   }
 
@@ -205,4 +249,6 @@
   opacity:0;
 }
 }
+
+/*logo - end*/
 
