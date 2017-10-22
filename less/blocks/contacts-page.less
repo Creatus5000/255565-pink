@@ -2,7 +2,7 @@
     &__index {
         background-color: @white;
         margin: 0 auto;
-        position:relative;
+        position: relative;
     }
     &__top {
         margin-bottom: 30px;
@@ -47,9 +47,6 @@
         text-decoration: none;
     }
 }
-
-
-
 @media(min-width:@tablet) {
     .contacts-page {
         &__index {
@@ -77,28 +74,22 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding-right:5px;
+            padding-right: 5px;
         }
         &__contacts {
             width: 280px;
-
         }
-
         &__wrap {
             margin: 0 auto;
             width: @tablet;
         }
-
-         &__middle > div:nth-of-type(2),
-         &__middle > div:nth-of-type(1) {
-            margin-bottom:8px;
+        &__middle > div:nth-of-type(2), &__middle > div:nth-of-type(1) {
+            margin-bottom: 8px;
         }
-
-         &__middle > div:nth-of-type(3) {
-            margin-bottom:-8px;
+        &__middle > div:nth-of-type(3) {
+            margin-bottom: -8px;
         }
     }
-
 }
 @media(min-width:@desktop) {
     .contacts-page {
@@ -130,48 +121,35 @@
         &__contacts-title {
             margin-bottom: 30px;
         }
-
         &__wrap {
             width: @desktop;
         }
     }
 }
-
-
-@media(max-width:@tablet-1){
-  .contacts-page__contacts{
-    margin-bottom:28px;
-  }
+@media(max-width:@tablet-1) {
+    .contacts-page__contacts {
+        margin-bottom: 28px;
+    }
 }
-
-.contacts-page__contacts-details{
-  margin-bottom:25px;
+.contacts-page__contacts-details {
+    margin-bottom: 25px;
 }
-
-
-
-.contacts-page__email:hover{
-  color:@bg-blackblue;
+.contacts-page__email:hover {
+    color: @bg-blackblue;
 }
-
-.contacts-page__email:active{
-  opacity:0.3;
+.contacts-page__email:active {
+    opacity: 0.3;
 }
-
-@media(min-width:@tablet){
-
-  .contacts-page__contacts-title{
-    margin-top:14px;
-  }
-
-.contacts-page__contacts-details{
-  margin-bottom:33px;
+@media(min-width:@tablet) {
+    .contacts-page__contacts-title {
+        margin-top: 14px;
+    }
+    .contacts-page__contacts-details {
+        margin-bottom: 33px;
+    }
 }
-}
-
-
-@media(min-width:@desktop){
-.contacts-page__contacts-details{
-  margin-bottom:30px;
-}
+@media(min-width:@desktop) {
+    .contacts-page__contacts-details {
+        margin-bottom: 30px;
+    }
 }

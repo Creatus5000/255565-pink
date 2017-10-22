@@ -17,8 +17,8 @@
         position: relative;
         text-align: center;
         width: 100vw;
-        display:block;
-        overflow:hidden;
+        display: block;
+        overflow: hidden;
     }
     &__author {
         .font18;
@@ -26,7 +26,6 @@
         color: @black;
         font-style: normal;
         font-weight: bold;
-
     }
     &__author-description {
         display: none;
@@ -42,33 +41,23 @@
         display: none;
     }
 }
-.slider-quotes__frame{
-margin:0 auto;
-width:100vw;
-
-
+.slider-quotes__frame {
+    margin: 0 auto;
+    width: 100vw;
 }
-
-.slider-quotes__slides{
-  width:300vw;
-display:flex;
-flex-direction:row;
-
-
+.slider-quotes__slides {
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
 }
-
-.slider-quotes__text{
-
-  display:flex;
-  width:95vw;
-flex-direction:column;
-
+.slider-quotes__text {
+    display: flex;
+    width: 95vw;
+    flex-direction: column;
 }
-
-.slider-quotes__arrow{
-  display:none;
+.slider-quotes__arrow {
+    display: none;
 }
-
 @media(min-width:@tablet) {
     .slider-quotes {
         &::after {
@@ -104,32 +93,20 @@ flex-direction:column;
             padding-bottom: 0;
         }
     }
-
-.slider-quotes__frame{
-margin:0 auto;
-width:620px;
-
-
-}
-
-.slider-quotes__slides{
-  width:300%;
-display:flex;
-flex-direction:row;
-
-
-}
-
-.slider-quotes__text{
-
-  display:flex;
-  width:95vw;
-flex-direction:column;
-
-}
-
-
-
+    .slider-quotes__frame {
+        margin: 0 auto;
+        width: 620px;
+    }
+    .slider-quotes__slides {
+        width: 300%;
+        display: flex;
+        flex-direction: row;
+    }
+    .slider-quotes__text {
+        display: flex;
+        width: 95vw;
+        flex-direction: column;
+    }
 }
 @media(min-width:@desktop) {
     .slider-quotes {
@@ -159,294 +136,189 @@ flex-direction:column;
         }
     }
 }
-
-
-
-
-.slider-quotes__button--checked,
-.slider-quotes__button
-{
-display:none;
+.slider-quotes__button--checked, .slider-quotes__button {
+    display: none;
 }
-
-.slider-quotes__label label
-{
+.slider-quotes__label label {
     display: inline-block;
-
     width: 7px;
     height: 7px;
     margin: 0 5px;
-
     cursor: pointer;
     vertical-align: top;
-
     border: 4px solid @button-grey;
     border-radius: 50%;
-
-
 }
-
-.slider-quotes__label
-{
+.slider-quotes__label {
     position: absolute;
     z-index: 10;
-    margin:0 auto;
+    margin: 0 auto;
     right: 43%;
     bottom: 68px;
 }
-
-#btn-1:checked ~ .slider-quotes__label label[for="btn-1"],
-#btn-2:checked ~ .slider-quotes__label label[for="btn-2"],
-#btn-3:checked ~ .slider-quotes__label label[for="btn-3"]
-{
-  position:relative;
-  width:12px;
-  height:12px;
-  background-color: #FFFFFF;
+#btn-1:checked ~ .slider-quotes__label label[for="btn-1"], #btn-2:checked ~ .slider-quotes__label label[for="btn-2"], #btn-3:checked ~ .slider-quotes__label label[for="btn-3"] {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: #FFFFFF;
     top: -2px;
     left: 1px;
     border: 3px solid #1d2631;
 }
-
-
-#btn-1:checked ~ .slider-quotes__frame
-{
-  transform:translate(0vw);
-  transition: .3s;
+#btn-1:checked ~ .slider-quotes__frame {
+    transform: translate(0vw);
+    transition: .3s;
 }
-
-#btn-2:checked ~ .slider-quotes__frame
-{
-  transform:translate(-95vw);
-  transition: .3s;
+#btn-2:checked ~ .slider-quotes__frame {
+    transform: translate(-95vw);
+    transition: .3s;
 }
-
-#btn-3:checked ~ .slider-quotes__frame
-{
-  transform:translate(-190vw);
-  transition: .3s;
+#btn-3:checked ~ .slider-quotes__frame {
+    transform: translate(-190vw);
+    transition: .3s;
 }
-
-@media(min-width:@tablet){
-
-#btn-1:checked ~ .slider-quotes__frame
-{
-  transform:translate(0px);
-  transition: .3s;
+@media(min-width:@tablet) {
+    #btn-1:checked ~ .slider-quotes__frame {
+        transform: translate(0px);
+        transition: .3s;
+    }
+    #btn-2:checked ~ .slider-quotes__frame {
+        transform: translate(-620px);
+        transition: .3s;
+    }
+    #btn-3:checked ~ .slider-quotes__frame {
+        transform: translate(-1240px);
+        transition: .3s;
+    }
+    .slider-quotes__label {
+        right: 45%;
+        bottom: 65px;
+    }
 }
-
-#btn-2:checked ~ .slider-quotes__frame
-{
-  transform:translate(-620px);
-  transition: .3s;
+@media(min-width:@desktop) {
+    .slider-quotes__frame {
+        margin: 0 auto;
+        width: 960px;
+    }
+    .slider-quotes__text {
+        width: 960px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #btn-1:checked ~ .slider-quotes__frame {
+        transform: translate(0px);
+        transition: .3s;
+    }
+    #btn-2:checked ~ .slider-quotes__frame {
+        transform: translate(-960px);
+        transition: .3s;
+    }
+    #btn-3:checked ~ .slider-quotes__frame {
+        transform: translate(-1920px);
+        transition: .3s;
+    }
+    .slider-quotes__label {
+        right: 45%;
+        bottom: 65px;
+    }
+    .slider-quotes__arrow {
+        display: block;
+        position: absolute;
+    }
+    .slider-quotes__arrow-prev {
+        position: absolute;
+        top: 167px;
+        left: 10px;
+        z-index: 5;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 22px;
+            left: -3px;
+            width: 30px;
+            height: 2px;
+            background-color: @button-grey;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: -3px;
+            width: 30px;
+            height: 2px;
+            background-color: @button-grey;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+        &:hover::before {
+            background-color: @arrow-hover;
+        }
+        &:hover::after {
+            background-color: @arrow-hover;
+        }
+        &:active::before {
+            background-color: @arrow-active;
+        }
+        &:active::after {
+            background-color: @arrow-active;
+        }
+    }
+    .slider-quotes__arrow-next {
+        position: absolute;
+        top: 167px;
+        left: 920px;
+        z-index: 5;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: -3px;
+            width: 30px;
+            height: 2px;
+            background-color: @button-grey;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 22px;
+            left: -3px;
+            width: 30px;
+            height: 2px;
+            background-color: @button-grey;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+        &:hover::before {
+            background-color: @arrow-hover;
+        }
+        &:hover::after {
+            background-color: @arrow-hover;
+        }
+        &:active::before {
+            background-color: @arrow-active;
+        }
+        &:active::after {
+            background-color: @arrow-active;
+        }
+    }
 }
-
-#btn-3:checked ~ .slider-quotes__frame
-{
-  transform:translate(-1240px);
-  transition: .3s;
+.slider-quotes__label label:hover {
+    border-color: @arrow-hover;
 }
-
-.slider-quotes__label
-{
-
-    right: 45%;
-    bottom: 65px;
+.slider-quotes__label label:active {
+    border-color: @arrow-active;
 }
-  }
-
-@media(min-width:@desktop){
-
-  .slider-quotes__frame{
-margin:0 auto;
-width:960px;
-
-}
-
-.slider-quotes__text{
-width:960px;
-padding-left:40px;
-padding-right:40px;
-}
-
-#btn-1:checked ~ .slider-quotes__frame
-{
-  transform:translate(0px);
-  transition: .3s;
-}
-
-#btn-2:checked ~ .slider-quotes__frame
-{
-  transform:translate(-960px);
-  transition: .3s;
-}
-
-#btn-3:checked ~ .slider-quotes__frame
-{
-  transform:translate(-1920px);
-  transition: .3s;
-}
-
-.slider-quotes__label
-{
-
-    right: 45%;
-    bottom: 65px;
-}
-
-
-.slider-quotes__arrow{
-  display:block;
-  position:absolute;
-
-
-}
-
-.slider-quotes__arrow-prev{
-    position:absolute;
-    top:167px;
-    left:10px;
-    z-index:5;
-     cursor:pointer;
-     width:30px;
-     height:30px;
-
-  &::before {
-
-    content: "";
-
-    position: absolute;
-    top: 22px;
-    left: -3px;
-
-    width: 30px;
-    height: 2px;
-
-    background-color: @button-grey;
-
-  }
-
-
-  &::after {
-
-    content: "";
-
-    position: absolute;
-    top: 2px;
-    left: -3px;
-
-    width: 30px;
-    height: 2px;
-
-    background-color: @button-grey;
-
-  }
-
-&::before {
-    transform: rotate(45deg);
-
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-&:hover::before{
-   background-color: @arrow-hover;
-}
-
-&:hover::after{
-   background-color: @arrow-hover;
-}
-
-
-&:active::before{
-   background-color: @arrow-active;
-}
-
-&:active::after{
-   background-color: @arrow-active;
-}
-
-}
-
-
-
-.slider-quotes__arrow-next{
-    position:absolute;
-    top:167px;
-    left:920px;
-    z-index:5;
-     cursor:pointer;
-     width:30px;
-     height:30px;
-
-  &::before {
-
-    content: "";
-
-    position: absolute;
-    top: 2px;
-    left: -3px;
-
-    width: 30px;
-    height: 2px;
-
-    background-color: @button-grey;
-
-  }
-
-
-  &::after {
-
-    content: "";
-
-    position: absolute;
-    top: 22px;
-    left: -3px;
-
-    width: 30px;
-    height: 2px;
-
-    background-color: @button-grey;
-
-  }
-
-&::before {
-    transform: rotate(45deg);
-
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-&:hover::before{
-   background-color: @arrow-hover;
-}
-
-&:hover::after{
-   background-color: @arrow-hover;
-}
-
-
-&:active::before{
-   background-color: @arrow-active;
-}
-
-&:active::after{
-   background-color: @arrow-active;
-}
-
-
-}
-  }
-
-.slider-quotes__label label:hover{
-   border-color: @arrow-hover;
-}
-
-.slider-quotes__label label:active{
-   border-color: @arrow-active;
-}
-
