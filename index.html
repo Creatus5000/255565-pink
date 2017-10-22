@@ -186,6 +186,15 @@
         </symbol>
       </defs>
     </svg>
+    <!--Открытие меню без js:
+      <header class="page-header page-header--open page-header--nojs">
+      <button class="page-header__toggle--nojs" type="button">
+      <nav class="main-nav main-nav--open main-nav--nojs">
+
+      Закрытие меню без js:
+      <header class="page-header page-header--closed page-header--nojs">
+      <button class="page-header__toggle">
+      <nav class="main-nav main-nav--closed main-nav--nojs">-->
     <header class="page-header page-header--open page-header--nojs">
       <h1 class="visually-hidden">Приложение Пинк</h1>
       <div class="page-header__logo-container">
@@ -213,7 +222,7 @@
             </a>
           </div>
         </div>
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav main-nav--open main-nav--nojs">
         <ul class="main-nav__list">
@@ -452,13 +461,13 @@
         </div>
         <ul class="page-footer__index social-buttons">
           <li class="social-buttons__icon">
-            <a class="social-buttons__icon-link twitter" href="https://twitter.com/">Твиттер</a>
+            <a class="social-buttons__icon-link social-buttons__icon-link--twitter" href="https://twitter.com/">Твиттер</a>
           </li>
           <li class="social-buttons__icon">
-            <a class="social-buttons__icon-link facebook" href="https://www.facebook.com/">Фейсбук</a>
+            <a class="social-buttons__icon-link social-buttons__icon-link--facebook" href="https://www.facebook.com/">Фейсбук</a>
           </li>
           <li class="social-buttons__icon">
-            <a class="social-buttons__icon-link youtube" href="https://www.youtube.com/">Ютюб</a>
+            <a class="social-buttons__icon-link social-buttons__icon-link--youtube" href="https://www.youtube.com/">Ютюб</a>
           </li>
         </ul>
         <div class="page-footer__academy">
