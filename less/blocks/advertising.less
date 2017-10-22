@@ -10,8 +10,8 @@
         padding-top: 20px;
         padding-bottom: 52px;
         @media(min-width:@tablet) {
-            padding-top: 55px;
-            padding-bottom: 80px;
+            padding-top: 46px;
+            padding-bottom: 100px;
             .font40;
             .line(45px);
         }
@@ -32,15 +32,17 @@
         height: 30px;
         background-image: linear-gradient(to top left,@bg-grey 50%,transparent 50%);
         @media(min-width:@tablet) {
-            height: 50px;
+            height: 60px;
+            bottom:0;
         }
         @media(min-width:@desktop) {
             height: 100px;
+            bottom:-10px;
         }
     }
     &__title {
         margin: 0;
-        padding-top: 25px;
+        padding-top: 22px;
         padding-bottom: 12px;
         @media(min-width:@tablet) {
             padding-top: 0;
@@ -66,6 +68,10 @@
             padding-bottom: 15px;
             background-image: none;
             background-color: @white;
+        }
+
+        @media(min-width:@desktop){
+
         }
     }
     &__info::after {
@@ -103,10 +109,14 @@
     }
     &__details {
         .line(25px);
-        margin-bottom: 30px;
+        margin-bottom: 35px;
+        padding-left:10px;
+        padding-right:10px;
         @media(min-width:@tablet) {
             text-align: left;
             margin-bottom: 40px;
+            padding-left:0;
+            padding-right:0;
         }
         @media(min-width:@desktop) {
             text-align: center;
@@ -137,7 +147,7 @@
         @media(min-width:@tablet) {
             width: 620px;
             text-align: left;
-            padding-top: 45px;
+            padding-top: 25px;
             padding-left: 310px;
             padding-right: 0;
             margin: 0 auto;
@@ -265,8 +275,8 @@
         }
         @media(min-width:@desktop) {
             width: @desktop;
-            padding: 0 0 120px 376px;
-            margin: 0 auto;
+            padding: 0 0 79px 376px;
+            margin: 0 auto 25px auto;
             &::before {
                 content: "";
                 position: absolute;
@@ -282,3 +292,39 @@
         }
     }
 }
+
+@media(min-width:@tablet){
+.advertising__effect-heading {
+  margin-bottom:18px;
+}
+
+.advertising__effect-details {
+  .font14;
+  .line(24px);
+  padding-right:10px;
+  margin-top:5px;
+  margin-bottom:7px;
+}
+
+
+.advertising__effect-heading span{
+  display:block;
+}
+}
+
+@media(min-width:@desktop){
+.advertising__effect-heading span{
+  display:inline-block;
+}
+
+.advertising__effect-details {
+  .font18;
+  .line(30px);
+  padding-right:10px;
+  margin-top:5px;
+  margin-bottom:35px;
+}
+}
+
+
+

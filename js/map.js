@@ -13,7 +13,7 @@
 
   var image = {
     path: google.maps.SymbolPath.CIRCLE,
-    scale: 15,
+    scale: 13,
     strokeColor:'#fff',
     fillColor: '#d22856',
     fillOpacity: 1
