@@ -29,7 +29,7 @@
         list-style: none;
         margin-bottom: 0px;
         margin-top: 10px;
-        padding: 10px;
+        padding: 10px 0;
     }
     &__platform-intro {
         .font14;
@@ -70,6 +70,18 @@ color:@crimson;
 .program-download__button:active{
 color:@crimson-active;
 
+}
+
+@media(max-width:@tablet-1){
+  .program-download__container{
+    width:280px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .program-download__button{
+    width:280px;
+  }
 }
 
 @media(min-width:@tablet) {

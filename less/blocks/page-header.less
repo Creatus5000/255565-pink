@@ -54,9 +54,6 @@
     background-color: @darkblue;
 }
 
-.page-header__toggle--nojs{
-  display:none;
-}
 
 @media(min-width:@desktop) {
     .page-header--open, .page-header--nojs {
@@ -170,10 +167,10 @@
         }
     }
 }
-.page-header__logo-desktop, .page-header__logo-desktop--hover, .page-header__logo-tablet, .page-header__logo-tablet--hover {
+.page-header__logo-desktop, .page-header__logo-desktop-hover, .page-header__logo-tablet, .page-header__logo-tablet-hover {
     display: none;
 }
-.page-header__logo-mobile, .page-header__logo-mobile--hover {
+.page-header__logo-mobile, .page-header__logo-mobile-hover {
     width: 146px;
     height: 40px;
     margin-top: 26px;
@@ -183,7 +180,7 @@
     display: block;
     cursor: pointer;
 }
-.page-header__logo-mobile--hover {
+.page-header__logo-mobile-hover {
     z-index: 80;
 }
 .page-header__logo-link:hover .page-header__logo-mobile {
@@ -192,14 +189,17 @@
 .page-header__logo-link:active .page-header__logo-mobile {
     opacity: .6;
 }
-.page-header__logo-link:active .page-header__logo-mobile--hover {
+.page-header__logo-link:active .page-header__logo-mobile-hover {
     opacity: 0;
 }
+.page-header--open .page-header__toggle--nojs {
+   display:none;
+}
 @media(min-width:@tablet) {
-    .page-header__logo-mobile, .page-header__logo-mobile--hover {
+    .page-header__logo-mobile, .page-header__logo-mobile-hover {
         display: none;
     }
-    .page-header__logo-tablet, .page-header__logo-tablet--hover {
+    .page-header__logo-tablet, .page-header__logo-tablet-hover {
         width: 146px;
         height: 40px;
         margin-top: 26px;
@@ -209,7 +209,7 @@
         display: block;
         cursor: pointer;
     }
-    .page-header__logo-tablet--hover {
+    .page-header__logo-tablet-hover {
         z-index: 80;
     }
     .page-header__logo-link:hover .page-header__logo-tablet {
@@ -218,15 +218,18 @@
     .page-header__logo-link:active .page-header__logo-tablet {
         opacity: .6;
     }
-    .page-header__logo-link:active .page-header__logo-tablet--hover {
+    .page-header__logo-link:active .page-header__logo-tablet-hover {
         opacity: 0;
     }
 }
+
+
+
 @media(min-width:@desktop) {
-    .page-header__logo-tablet, .page-header__logo-tablet--hover {
+    .page-header__logo-tablet, .page-header__logo-tablet-hover {
         display: none;
     }
-    .page-header__logo-desktop, .page-header__logo-desktop--hover {
+    .page-header__logo-desktop, .page-header__logo-desktop-hover {
         width: 146px;
         height: 40px;
         margin-top: 26px;
@@ -236,7 +239,7 @@
         display: block;
         cursor: pointer;
     }
-    .page-header__logo-desktop--hover {
+    .page-header__logo-desktop-hover {
         z-index: 80;
     }
     .page-header__logo-link:hover .page-header__logo-desktop {
@@ -245,11 +248,9 @@
     .page-header__logo-link:active .page-header__logo-desktop {
         opacity: .6;
     }
-    .page-header__logo-link:active .page-header__logo-desktop--hover {
+    .page-header__logo-link:active .page-header__logo-desktop-hover {
         opacity: 0;
     }
 }
-
-
 
 

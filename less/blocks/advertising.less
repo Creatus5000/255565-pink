@@ -44,6 +44,10 @@
         margin: 0;
         padding-top: 22px;
         padding-bottom: 12px;
+        @media(max-width:@tablet-1){
+          width:300px;
+          margin:0 auto;
+        }
         @media(min-width:@tablet) {
             padding-top: 0;
             padding-bottom: 4px;
@@ -57,7 +61,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-position-y: bottom;
-        padding-bottom: 330px;
+        padding-bottom: 324px;
         margin: 0 auto;
         @media (min-resolution:@retina-dpi), (min-resolution:@retina-dppx) {
             background-image: url("iphone-screen-mobile@2x.png");
@@ -175,6 +179,11 @@
         }
     }
     &__info-item {
+        @media(max-width:@tablet-1){
+          width:300px;
+          margin-right:auto;
+          margin-left:auto;
+        }
         @media(min-width:@desktop) {
             position: relative;
             width: 240px;
