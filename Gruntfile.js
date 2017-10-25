@@ -38,7 +38,7 @@ module.exports = function(grunt) {
       "build/css/style.css": ["less/style.less"]
       }
       }
-      },     
+      },
       postcss: {
       style: {
       options: {
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       }
       }
       },
-      
+
       svg_cleaner: {
     minifySvgs: {
       files: {
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
       }
       }
     },
-            
+
     svgstore: {
       options: {
       includeTitleElement: false
