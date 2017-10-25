@@ -26,6 +26,7 @@
         color: @black;
         font-style: normal;
         font-weight: bold;
+        padding-left: 10px;
     }
     &__author-description {
         display: none;
@@ -34,7 +35,7 @@
         .font14;
         .line(30px);
         color: @darkblue;
-        margin: 10px 20px 0 20px;
+        margin: 10px 15px 0 15px;
         padding-bottom: 116px;
     }
     &__mark {
@@ -153,7 +154,7 @@
     position: absolute;
     z-index: 10;
     margin: 0 auto;
-    right: 43%;
+    right: 41%;
     bottom: 68px;
 }
 #btn-1:checked ~ .slider-quotes__label label[for="btn-1"], #btn-2:checked ~ .slider-quotes__label label[for="btn-2"], #btn-3:checked ~ .slider-quotes__label label[for="btn-3"] {
@@ -218,8 +219,7 @@
         transition: .3s;
     }
     .slider-quotes__label {
-        right: 45%;
-        bottom: 65px;
+        display: none;
     }
     .slider-quotes__arrow {
         display: block;
@@ -282,7 +282,7 @@
             content: "";
             position: absolute;
             top: 2px;
-            left: -3px;
+            left: 4px;
             width: 30px;
             height: 2px;
             background-color: @button-grey;
@@ -291,7 +291,7 @@
             content: "";
             position: absolute;
             top: 22px;
-            left: -3px;
+            left: 4px;
             width: 30px;
             height: 2px;
             background-color: @button-grey;

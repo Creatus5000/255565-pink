@@ -26,7 +26,7 @@
         padding-top: 27px;
     }
     .page-footer__form .page-footer__container {
-        padding-top: 58px;
+        padding-top: 54px;
     }
 }
 @media(min-width:@tablet) {
@@ -47,7 +47,7 @@
             align-items: center;
             margin-top: 22px;
         }
-        &__academy--link {
+        &__academy-link {
             font-size: 0;
         }
     }
@@ -62,7 +62,7 @@
         margin-left: 0;
     }
     .page-footer__index .page-footer__container {
-        padding-top: 37px;
+        padding-top: 40px;
     }
     .page-footer__form .page-footer__container {
         padding-top: 18px;
@@ -71,10 +71,10 @@
         margin-top: 12px;
     }
     .page-footer__form .page-footer__academy {
-        margin-top: 12px;
+        margin-top: 7px;
     }
     .page-footer__photo .page-footer__academy {
-        margin-top: 7px;
+        margin-top: 17px;
     }
 }
 @media(min-width:@desktop) {
@@ -86,7 +86,7 @@
         &__academy {
             .font18;
         }
-        &__academy--link::after {
+        &__academy-link::after {
             left: 115px;
         }
     }
@@ -112,23 +112,23 @@
         margin-top: 22px;
     }
 }
-.page-footer__academy--link {
+.page-footer__academy-link {
     margin-left: 14px;
     fill: @crimson;
 }
-.page-footer__academy--link:hover {
+.page-footer__academy-link:hover {
     fill: @darkblue;
 }
-.page-footer__academy--link:active {
+.page-footer__academy-link:active {
     fill: @button-grey;
 }
-.page-footer__logo-desktop, .page-footer__logo-desktop--hover, .page-footer__logo-tablet, .page-footer__logo-tablet--hover {
+.page-footer__logo-desktop, .page-footer__logo-desktop-hover, .page-footer__logo-desktop-active, .page-footer__logo-tablet, .page-footer__logo-tablet-hover, .page-footer__logo-tablet-active {
     display: none;
 }
 .page-footer__logo-link {
     position: relative;
 }
-.page-footer__logo-mobile, .page-footer__logo-mobile--hover {
+.page-footer__logo-mobile, .page-footer__logo-mobile-hover, .page-footer__logo-mobile-active {
     width: 146px;
     height: 40px;
     margin-left: 0px;
@@ -136,30 +136,30 @@
     z-index: 100;
     display: block;
     cursor: pointer;
-    left: 25px;
+    left: 22px;
 }
-.page-footer__logo-mobile--hover {
+.page-footer__logo-mobile-hover {
     z-index: 80;
 }
+.page-footer__logo-mobile-active {
+    z-index: 60;
+}
 .page-footer__logo-link:hover .page-footer__logo-mobile {
-    opacity: 0;
+    display: none;
 }
-.page-footer__logo-link:active .page-footer__logo-mobile {
-    opacity: .6;
-}
-.page-footer__logo-link:active .page-footer__logo-mobile--hover {
-    opacity: 0;
+.page-footer__logo-mobile-hover:active {
+    display: none;
 }
 @media(min-width:@tablet) {
-    .page-footer__logo-mobile, .page-footer__logo-mobile--hover {
+    .page-footer__logo-mobile, .page-footer__logo-mobile-hover, .page-footer__logo-mobile-active {
         left: 0px;
     }
 }
 @media(min-width:@desktop) {
-    .page-footer__logo-mobile, .page-footer__logo-mobile--hover {
+    .page-footer__logo-mobile, .page-footer__logo-mobile-hover, .page-footer__logo-mobile-active {
         display: none;
     }
-    .page-footer__logo-desktop, .page-footer__logo-desktop--hover {
+    .page-footer__logo-desktop, .page-footer__logo-desktop-hover, .page-footer__logo-desktop-active {
         width: 146px;
         height: 40px;
         margin-top: 12px;
@@ -169,16 +169,16 @@
         display: block;
         cursor: pointer;
     }
-    .page-footer__logo-desktop--hover {
+    .page-footer__logo-desktop-hover {
         z-index: 80;
     }
+    .page-footer__logo-desktop-active {
+        z-index: 60;
+    }
     .page-footer__logo-link:hover .page-footer__logo-desktop {
-        opacity: 0;
+        display: none;
     }
-    .page-footer__logo-link:active .page-footer__logo-desktop {
-        opacity: .6;
-    }
-    .page-footer__logo-link:active .page-footer__logo-desktop--hover {
-        opacity: 0;
+    .page-footer__logo-desktop-hover:active {
+        display: none;
     }
 }

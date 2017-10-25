@@ -1,10 +1,10 @@
 .program-download {
     background-color: @darkblue;
     padding: 495px 20px 28px 20px;
-    margin-top:-70px;
+    margin-top: -70px;
     position: relative;
     text-align: center;
-    border-bottom:1px solid transparent;
+    border-bottom: 1px solid transparent;
     &__button {
         .font18;
         .line (18px);
@@ -13,15 +13,14 @@
         font-weight: bold;
         position: relative;
         text-decoration: none;
-        padding:18px 25px 18px 25px;
-        border:3px solid @white;
-        border-radius:50px;
-        line-height:12px;
+        padding: 18px 25px 18px 25px;
+        border: 3px solid @white;
+        border-radius: 50px;
+        line-height: 12px;
         @media(min-width:@desktop) {
             .font21;
         }
     }
-
     &__platform {
         display: flex;
         flex-direction: row;
@@ -29,7 +28,7 @@
         list-style: none;
         margin-bottom: 0px;
         margin-top: 10px;
-        padding: 10px;
+        padding: 10px 0;
     }
     &__platform-intro {
         .font14;
@@ -46,39 +45,40 @@
         display: none;
     }
 }
-
-.program-download__platform-ios,
-.program-download__platform-android,
-.program-download__platform-windows{
-         color: @white;
-        display: block;
-        font-weight: bold;
-        margin:20px 20px 10px 20px;
-        text-decoration: none;
+.program-download__platform-ios, .program-download__platform-android, .program-download__platform-windows {
+    color: @white;
+    display: block;
+    font-weight: bold;
+    margin: 20px 20px 10px 20px;
+    text-decoration: none;
 }
-
-.program-download__platform-ios{
-  margin-top:12px;
+.program-download__platform-ios {
+    margin-top: 12px;
 }
-
-.program-download__button:hover{
-background-color:@white;
-color:@crimson;
-
+.program-download__button:hover {
+    background-color: @white;
+    color: @crimson;
 }
-
-.program-download__button:active{
-color:@crimson-active;
-
+.program-download__button:active {
+    color: @crimson-active;
 }
-
+@media(max-width:@tablet-1) {
+    .program-download__container {
+        width: 280px;
+        min-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .program-download__button {
+        width: 280px;
+    }
+}
 @media(min-width:@tablet) {
     .program-download {
         margin: 0 auto;
-        padding-top:535px;
-        margin-top:-110px;
+        padding-top: 535px;
+        margin-top: -110px;
         position: relative;
-
         &__container {
             display: flex;
             flex-direction: column;
@@ -89,7 +89,6 @@ color:@crimson-active;
                 max-width: 960px;
                 padding-left: 10px;
                 padding-right: 10px;
-
             }
         }
         &__intro-container {
@@ -119,23 +118,19 @@ color:@crimson-active;
         }
         &__platform {
             flex-direction: row;
-            padding-bottom:25px;
+            padding-bottom: 25px;
         }
     }
-
-.program-download__button{
-  margin-top:30px;
+    .program-download__button {
+        margin-top: 30px;
     }
-
-.program-download__platform-ios{
-margin-top:25px;
+    .program-download__platform-ios {
+        margin-top: 25px;
+    }
+    .program-download__platform-android, .program-download__platform-windows {
+        margin-top: 32px;
+    }
 }
-.program-download__platform-android,
-.program-download__platform-windows{
-  margin-top:32px;
-}
-}
-
 @media(min-width:@desktop) {
     .program-download {
         margin-top: -200px;
@@ -149,19 +144,16 @@ margin-top:25px;
             width: 305px;
         }
     }
-    .program-download__platform{
-      padding-bottom:40px;
+    .program-download__platform {
+        padding-bottom: 40px;
     }
-
-.program-download__button{
-  margin-top:52px;
+    .program-download__button {
+        margin-top: 52px;
     }
-
-.program-download__platform-ios{
-  margin-top:50px;
-}
-.program-download__platform-android,
-.program-download__platform-windows{
-  margin-top:60px;
-}
+    .program-download__platform-ios {
+        margin-top: 50px;
+    }
+    .program-download__platform-android, .program-download__platform-windows {
+        margin-top: 60px;
+    }
 }
