@@ -1,78 +1,54 @@
-.popup{
-  text-align:center;
-
-
-
-  &__title{
-    .font18;
-    .line(24px);
-    color:@black;
-
-
-  }
-
-  &__report{
-    .font14;
-    .line(24px);
-    color:@darkblue;
-
-margin-right:auto;
-margin-left:auto;
-
-  }
+.popup {
+    text-align: center;
+    &__title {
+        .font18;
+        .line(24px);
+        color: @black;
+    }
+    &__report {
+        .font14;
+        .line(24px);
+        color: @darkblue;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
-
-.popup__error, .popup__sent{
-  padding-top:50px;
-  padding-bottom:50px;
-      box-shadow:
-    -28px 33px 30px -33px rgba(0,0,0,.8),
-    28px 33px 30px -33px rgba(0,0,0,.8),
-    0 23px 30px -15px rgba(0,0,0,.8),
-    0 -1px 25px -20px rgba(0,0,0,.8);
+.popup__error, .popup__sent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: -28px 33px 30px -33px rgba(0,0,0,.8),28px 33px 30px -33px rgba(0,0,0,.8),0 23px 30px -15px rgba(0,0,0,.8),0 -1px 25px -20px rgba(0,0,0,.8);
 }
-
-
-.popup__button-background{
-  background:@bg-grey;
+.popup__button-background {
+    background: @bg-grey;
 }
-
-@media(min-width:@tablet){
-  .popup__error{
-    padding-left:85px;
-    padding-right:85px;
-  }
-
-  .popup__report{
-    text-align:center;
-    padding-right:20px;
-    padding-left:20px;
-  }
+@media(min-width:@tablet) {
+    .popup__error {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+    .popup__report {
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
-
-
-@media(min-width:@desktop){
-.popup__title{
-  .font30;
-  .line(40px);}
-
-.popup__error{
-    padding-left:0px;
-    padding-right:0px;
-
-}
-
-.popup__sent{
-  width:785px;
-  height:380px;
-
-}
-
-  .popup__report{
-    text-align:center;
-    padding-right:20px;
-    padding-left:20px;
-    width:50%;
-  }
-
+@media(min-width:@desktop) {
+    .popup__title {
+        .font30;
+        .line(40px);
+    }
+    .popup__error {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .popup__sent {
+        width: 785px;
+        height: 380px;
+    }
+    .popup__report {
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 50%;
+    }
 }
