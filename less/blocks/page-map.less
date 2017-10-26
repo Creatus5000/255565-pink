@@ -1,52 +1,56 @@
 .page-map {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 200px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
 }
+
 .page-map::before {
-    background-image: -webkit-gradient(linear,right bottom,left top,color-stop(50%,transparent),color-stop(50%,@white));
-    background-image: linear-gradient(to top right,transparent 50%,@white 50%);
-    top: 0;
-    content: "";
-    height: 50px;
-    left: 0;
-    position: absolute;
-    width: 50%;
-    z-index: 5;
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, @white));
+  background-image: linear-gradient(to top right, transparent 50%, @white 50%);
+  top: 0;
+  content: "";
+  height: 50px;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  z-index: 5;
 }
+
 .page-map::after {
-    background-image: -webkit-gradient(linear,right bottom,left top,color-stop(50%,transparent),color-stop(50%,@white));
-    background-image: linear-gradient(to top left,transparent 50%,@white 50%);
-    top: 0;
-    content: "";
-    height: 50px;
-    right: 0;
-    position: absolute;
-    width: 50%;
-    z-index: 5;
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, @white));
+  background-image: linear-gradient(to top left, transparent 50%, @white 50%);
+  top: 0;
+  content: "";
+  height: 50px;
+  right: 0;
+  position: absolute;
+  width: 50%;
+  z-index: 5;
 }
+
 @media(min-width:@tablet) {
-    .page-map {
-        height: 375px;
-    }
-    .page-map::before {
-        height: 70px;
-    }
-    .page-map::after {
-        height: 70px;
-    }
+  .page-map {
+    height: 375px;
+  }
+  .page-map::before {
+    height: 70px;
+  }
+  .page-map::after {
+    height: 70px;
+  }
 }
+
 @media(min-width:@desktop) {
-    .page-map {
-        height: 500px;
-    }
-    .page-map::before {
-        height: 100px;
-        top: 0;
-    }
-    .page-map::after {
-        height: 100px;
-        top: 0;
-    }
+  .page-map {
+    height: 500px;
+  }
+  .page-map::before {
+    height: 100px;
+    top: 0;
+  }
+  .page-map::after {
+    height: 100px;
+    top: 0;
+  }
 }
