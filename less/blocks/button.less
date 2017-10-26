@@ -1,47 +1,59 @@
-.button, .popup__button {
-    background-color: @cucumber;
-    text-transform: uppercase;
-    color: white;
-    .font18;
-    .line(30px);
-    border: 0;
-}
-.button:hover, .popup__button:hover {
-    background-color: @cucumber-hover;
-}
-.button:active, .popup__button:active {
-    color: @cucumber-active;
-}
-.button:disabled, .button[disabled] {
-    background-color: @table-grey;
-}
+.button,
 .popup__button {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    .line(60px);
-    width: 100%;
-    font-weight: bold;
+  background-color: @cucumber;
+  text-transform: uppercase;
+  color: white;
+  .font18;
+  .line(30px);
+  border: 0;
 }
+
+.button:hover,
+.popup__button:hover {
+  background-color: @cucumber-hover;
+}
+
+.button:active,
+.popup__button:active {
+  color: @cucumber-active;
+}
+
+.button:disabled,
+.button[disabled] {
+  background-color: @table-grey;
+}
+
+.popup__button {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  .line(60px);
+  width: 100%;
+  font-weight: bold;
+}
+
 .popup__sent .popup__button {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: auto;
-    margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 @media(max-width:@tablet-1) {
-    .popup__button {
-        width: 85%;
-    }
+  .popup__button {
+    width: 85%;
+  }
 }
+
 @media(min-width:@tablet) {
-    .popup__sent .popup__button {
-        width: 70%;
-    }
+  .popup__sent .popup__button {
+    width: 70%;
+  }
 }
+
 @media(min-width:@desktop) {
-    .popup__button {
-        width: 80%;
-    }
+  .popup__button {
+    width: 80%;
+  }
 }

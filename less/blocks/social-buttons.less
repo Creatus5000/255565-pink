@@ -1,123 +1,129 @@
 @media(max-width:@tablet-1) {
-    .social-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 52px auto;
-        padding-right: 0px;
-        padding-left: 0;
-        &__icon-link {
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            border: 3px solid @table-grey;
-            border-radius: 50%;
-            font-size: 0;
-            height: 54px;
-            margin-left: 5px;
-            margin-right: 5px;
-            padding: 23px;
-            width: 54px;
-        }
-        .social-buttons__icon-link--twitter {
-            background-image: url("../img/icon-twitter.svg");
-        }
-        .social-buttons__icon-link--facebook {
-            background-image: url("../img/icon-facebook.svg");
-        }
-        .social-buttons__icon-link--youtube {
-            background-image: url("../img/icon-youtube.svg");
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-        }
+  .social-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 52px auto;
+    padding-right: 0px;
+    padding-left: 0;
+    &__icon-link {
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      border: 3px solid @table-grey;
+      border-radius: 50%;
+      font-size: 0;
+      height: 54px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 23px;
+      width: 54px;
     }
-    .page-footer__form .social-buttons {
-        padding-top: 42px;
+    .social-buttons__icon-link--twitter {
+      background-image: url("../img/icon-twitter.svg");
     }
-    .page-footer__form .page-footer__academy {
-        margin-bottom: 0;
-        margin-top: 0px;
+    .social-buttons__icon-link--facebook {
+      background-image: url("../img/icon-facebook.svg");
     }
+    .social-buttons__icon-link--youtube {
+      background-image: url("../img/icon-youtube.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+  .page-footer__form .social-buttons {
+    padding-top: 42px;
+  }
+  .page-footer__form .page-footer__academy {
+    margin-bottom: 0;
+    margin-top: 0px;
+  }
 }
+
 .social-buttons {
-    &__icon {
-        list-style: none;
-    }
-    a {
-        color: @darkblue;
-        text-decoration: none;
-    }
+  &__icon {
+    list-style: none;
+  }
+  a {
+    color: @darkblue;
+    text-decoration: none;
+  }
 }
+
 .page-footer__photo .social-buttons {
-    padding-top: 35px;
+  padding-top: 35px;
 }
+
 @media(min-width:@tablet) {
-    .social-buttons {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        margin: auto;
-        padding-left: 92px;
-        &__icon-link {
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            border: 3px solid @table-grey;
-            border-radius: 50%;
-            font-size: 0;
-            height: 54px;
-            margin-right: 5px;
-            margin-left: 5px;
-            padding: 23px;
-            width: 54px;
-        }
-        .social-buttons__icon-link--twitter {
-            background-image: url("../img/icon-twitter.svg");
-        }
-        .social-buttons__icon-link--facebook {
-            background-image: url("../img/icon-facebook.svg");
-        }
-        .social-buttons__icon-link--youtube {
-            background-image: url("../img/icon-youtube.svg");
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-        }
+  .social-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: auto;
+    padding-left: 92px;
+    &__icon-link {
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      border: 3px solid @table-grey;
+      border-radius: 50%;
+      font-size: 0;
+      height: 54px;
+      margin-right: 5px;
+      margin-left: 5px;
+      padding: 23px;
+      width: 54px;
     }
-    .page-footer__index .social-buttons {
-        padding-top: 18px;
-        margin-left: 125px;
+    .social-buttons__icon-link--twitter {
+      background-image: url("../img/icon-twitter.svg");
     }
-    .page-footer__photo .social-buttons {
-        padding-top: 12px;
-        margin-left: 125px;
-        height: 33px;
+    .social-buttons__icon-link--facebook {
+      background-image: url("../img/icon-facebook.svg");
     }
-    .page-footer__form .social-buttons {
-        padding-top: 0px;
-        margin-left: 125px;
-        height: 22px;
+    .social-buttons__icon-link--youtube {
+      background-image: url("../img/icon-youtube.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
     }
+  }
+  .page-footer__index .social-buttons {
+    padding-top: 18px;
+    margin-left: 125px;
+  }
+  .page-footer__photo .social-buttons {
+    padding-top: 12px;
+    margin-left: 125px;
+    height: 33px;
+  }
+  .page-footer__form .social-buttons {
+    padding-top: 0px;
+    margin-left: 125px;
+    height: 22px;
+  }
 }
+
 @media(min-width:@desktop) {
-    .social-buttons {
-        padding-left: 104px;
-    }
-    .page-footer__index .social-buttons {
-        padding-top: 23px;
-        margin-left: 152px;
-    }
-    .page-footer__photo .social-buttons {
-        padding-top: 25px;
-        margin-left: 145px;
-        height: 60px;
-    }
-    .page-footer__form .social-buttons {
-        padding-top: 6px;
-        margin-left: 157px;
-        height: 22px;
-    }
+  .social-buttons {
+    padding-left: 104px;
+  }
+  .page-footer__index .social-buttons {
+    padding-top: 23px;
+    margin-left: 152px;
+  }
+  .page-footer__photo .social-buttons {
+    padding-top: 25px;
+    margin-left: 145px;
+    height: 60px;
+  }
+  .page-footer__form .social-buttons {
+    padding-top: 6px;
+    margin-left: 157px;
+    height: 22px;
+  }
 }
+
 .social-buttons__icon-link:hover {
-    border: 3px solid black;
+  border: 3px solid black;
 }
+
 .social-buttons__icon-link:active {
-    opacity: .3;
+  opacity: .3;
 }

@@ -1,154 +1,166 @@
 .contacts-page {
+  &__index {
+    background-color: @white;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__top {
+    margin-bottom: 30px;
+    padding-bottom: 1px;
+    padding-top: 46px;
+  }
+  &__title {
+    .font24;
+    .line (18px);
+    color: @darkblue;
+    font-weight: @light;
+    margin-bottom: 5px;
+    margin-top: 11px;
+    text-align: center;
+  }
+  &__contacts-title {
+    .font18;
+    .line(18px);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  &__contacts-details,
+  &__contacts-details a {
+    .font24;
+    .line(24px);
+    color: @crimson;
+    font-weight: @light;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    text-align: center;
+    text-decoration: none;
+  }
+  &__other-pages {
+    background-color: @white;
+    text-align: center;
+  }
+  &__academy,
+  &__academy a,
+  &__logo-link {
+    .font14;
+    .line (18px);
+    color: @darkblue;
+    text-decoration: none;
+  }
+}
+
+@media(min-width:@tablet) {
+  .contacts-page {
     &__index {
-        background-color: @white;
-        margin: 0 auto;
-        position: relative;
+      margin: 0 auto;
     }
     &__top {
-        margin-bottom: 30px;
-        padding-bottom: 1px;
-        padding-top: 46px;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      padding-top: 40px;
     }
     &__title {
-        .font24;
-        .line (18px);
-        color: @darkblue;
-        font-weight: @light;
-        margin-bottom: 5px;
-        margin-top: 11px;
-        text-align: center;
+      .font40;
+      .line (43px);
+      color: @darkblue;
+      font-weight: @light;
+      margin-top: 5px;
+      text-align: center;
+    }
+    &__contacts-details {
+      margin-bottom: 45px;
+    }
+    &__middle {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-right: 5px;
+    }
+    &__contacts {
+      width: 280px;
+    }
+    &__wrap {
+      margin: 0 auto;
+      width: @tablet;
+    }
+    &__middle>div:nth-of-type(2),
+    &__middle>div:nth-of-type(1) {
+      margin-bottom: 8px;
+    }
+    &__middle>div:nth-of-type(3) {
+      margin-bottom: -8px;
+    }
+  }
+}
+
+@media(min-width:@desktop) {
+  .contacts-page {
+    &__index {
+      padding-top: 27px;
+    }
+    &__top {
+      margin-bottom: 36px;
+    }
+    &__title {
+      .font50;
+      .line(54px);
+    }
+    &__middle {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__middle>div:nth-of-type(1) {
+      order: 1;
+    }
+    &__middle>div:nth-of-type(2) {
+      order: 3;
+    }
+    &__middle>div:nth-of-type(3) {
+      order: 2;
     }
     &__contacts-title {
-        .font18;
-        .line(18px);
-        font-weight: bold;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        text-align: center;
+      margin-bottom: 30px;
     }
-    &__contacts-details, &__contacts-details a {
-        .font24;
-        .line(24px);
-        color: @crimson;
-        font-weight: @light;
-        margin-bottom: 25px;
-        margin-top: 0px;
-        text-align: center;
-        text-decoration: none;
+    &__wrap {
+      width: @desktop;
     }
-    &__other-pages {
-        background-color: @white;
-        text-align: center;
-    }
-    &__academy, &__academy a, &__logo-link {
-        .font14;
-        .line (18px);
-        color: @darkblue;
-        text-decoration: none;
-    }
+  }
 }
-@media(min-width:@tablet) {
-    .contacts-page {
-        &__index {
-            margin: 0 auto;
-        }
-        &__top {
-            margin-bottom: 18px;
-            padding-bottom: 12px;
-            padding-top: 40px;
-        }
-        &__title {
-            .font40;
-            .line (43px);
-            color: @darkblue;
-            font-weight: @light;
-            margin-top: 5px;
-            text-align: center;
-        }
-        &__contacts-details {
-            margin-bottom: 45px;
-        }
-        &__middle {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding-right: 5px;
-        }
-        &__contacts {
-            width: 280px;
-        }
-        &__wrap {
-            margin: 0 auto;
-            width: @tablet;
-        }
-        &__middle > div:nth-of-type(2), &__middle > div:nth-of-type(1) {
-            margin-bottom: 8px;
-        }
-        &__middle > div:nth-of-type(3) {
-            margin-bottom: -8px;
-        }
-    }
-}
-@media(min-width:@desktop) {
-    .contacts-page {
-        &__index {
-            padding-top: 27px;
-        }
-        &__top {
-            margin-bottom: 36px;
-        }
-        &__title {
-            .font50;
-            .line(54px);
-        }
-        &__middle {
-            display: flex;
-            flex-direction: row;
-            padding-left: 0;
-            padding-right: 0;
-        }
-        &__middle > div:nth-of-type(1) {
-            order: 1;
-        }
-        &__middle > div:nth-of-type(2) {
-            order: 3;
-        }
-        &__middle > div:nth-of-type(3) {
-            order: 2;
-        }
-        &__contacts-title {
-            margin-bottom: 30px;
-        }
-        &__wrap {
-            width: @desktop;
-        }
-    }
-}
+
 @media(max-width:@tablet-1) {
-    .contacts-page__contacts {
-        margin-bottom: 28px;
-    }
+  .contacts-page__contacts {
+    margin-bottom: 28px;
+  }
 }
+
 .contacts-page__contacts-details {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
+
 .contacts-page__email:hover {
-    color: @bg-blackblue;
+  color: @bg-blackblue;
 }
+
 .contacts-page__email:active {
-    opacity: 0.3;
+  opacity: 0.3;
 }
+
 @media(min-width:@tablet) {
-    .contacts-page__contacts-title {
-        margin-top: 14px;
-    }
-    .contacts-page__contacts-details {
-        margin-bottom: 33px;
-    }
+  .contacts-page__contacts-title {
+    margin-top: 14px;
+  }
+  .contacts-page__contacts-details {
+    margin-bottom: 33px;
+  }
 }
+
 @media(min-width:@desktop) {
-    .contacts-page__contacts-details {
-        margin-bottom: 30px;
-    }
+  .contacts-page__contacts-details {
+    margin-bottom: 30px;
+  }
 }
